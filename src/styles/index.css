@@ -1,2 +1,18 @@
 @import "tailwindcss";
 
+/* optional: drive dark mode by a .dark class */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* LIGHT values you gave */
+:root {
+  --highlight: #0066cc;   /* brand blue */
+  --matte:   #1d1d1f;   /* near-black */
+  --surface:#f5f5f7;  /* subtle gray */
+}
+
+/* Map your runtime vars -> Tailwind theme colors */
+@theme inline {
+  --color-highlight:   var(--highlight);
+  --color-matte:     var(--matte);
+  --color-surface: var(--surface);
+}
