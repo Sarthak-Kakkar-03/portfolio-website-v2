@@ -4,13 +4,25 @@ import { useState } from 'react'
 const Header = () => {
     const [isOpen, setIsOpen] = useState(false);
 
-    const links = (<>
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Experience</a></li>
-                <li><a href="">Projects</a></li>
-                <li><a href="">Contact</a></li>
-                    </>)
+    const navLinks = ["Home", "About", "Experience", "Projects", "Contact"];
+
+    const links = navLinks.map((link) => (
+    <li key={link}>
+        <a
+        href=""
+        className={`font-medium md:font-light ${
+            link === "Contact"
+            ? "text-red-500 hover:text-red-700"
+            : "text-gray-700 hover:text-highlight"
+        }
+        hover:cursor-pointer
+        `}
+        >
+        {link}
+        </a>
+    </li>
+    ));
+
 
     const mainMenu = (
     <nav className='bg-surface w-full md:sticky flex justify-center p-2 text-sm'>
