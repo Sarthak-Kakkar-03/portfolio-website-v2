@@ -11,11 +11,11 @@ gsap.registerPlugin(ScrollTrigger);
 const HEADER_H = 60;
 
 const lines = [
-  'Creativity ',
-  'is ',
-  'my ',
-  'craft',
-  'abstract thinking is my passion'
+  'Shaping',
+  'vision',
+  'into',
+  'lasting',
+  'solutions'
 ];
 
 export default function LetterCollision() {
@@ -83,7 +83,7 @@ export default function LetterCollision() {
       {/* Section fills the screen minus header */}
       <section
         ref={ref}
-        className="ml-8 flex flex-col justify-end items-start"
+        className="ml-8 flex flex-col justify-end items-start pb-8"
         style={{ minHeight: `calc(100vh - ${HEADER_H}px)`, paddingTop: 24, paddingBottom: 24 }}
       >
         <div className="mb-8">
