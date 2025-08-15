@@ -1,7 +1,7 @@
 import React from 'react'
 import LetterCollision from './LetterExplosion/LetterCollision'
 
-const About = () => {
+const Hero = () => {
   return (
     <div className="overflow-x-hidden">
       <LetterCollision />
@@ -9,4 +9,4 @@ const About = () => {
   )
 }
 
-export default About
+export default Hero
