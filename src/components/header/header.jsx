@@ -22,7 +22,9 @@ const Header = () => {
   ))
 
   const mainMenu = (
-    <nav className="bg-white w-full md:sticky flex justify-center p-5 text-sm ">
+    <nav className="bg-white w-full md:sticky flex justify-center p-5 text-sm top-0"
+    style={{height:"4rem"}}>
+      
       <div className="hidden md:flex flex-1 md:max-w-3xl justify-center">
         <ul className="flex flex-1 justify-between">
           {links}

@@ -10,13 +10,13 @@ function App() {
 
   return (
     <div className='min-h-screen bg-white'>
-      <Header/>
       <main
-      className="flex-1 overflow-y-auto overscroll-contain focus:outline-none"
+      className="flex-1 overscroll-contain focus:outline-none"
       tabIndex={-1}
       role="region"
       aria-label="Main content"
       >
+        <Header/>
         <Hero/>
       </main>
     </div>
