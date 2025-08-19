@@ -5,6 +5,7 @@ import './App.css'
 import Header from './components/header/header'
 import Hero from './components/Hero/Hero'
 import Section from './components/Section'
+import About from './components/About/about'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -20,6 +21,7 @@ function App() {
       >
         <Header/>
         <Section id='hero'><Hero/></Section>
+        <Section id='about' className='flex items-center justify-center'><About/></Section>
       </main>
     </div>
   )
