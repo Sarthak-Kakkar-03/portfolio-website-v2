@@ -21,7 +21,7 @@ function App() {
       >
         <Header/>
         <Section id='hero'><Hero/></Section>
-        <Section id='about' className='flex items-center justify-center'><About/></Section>
+        <Section id='about' className='flex items-start justify-center'><About/></Section>
       </main>
     </div>
   )
