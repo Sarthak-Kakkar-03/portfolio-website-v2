@@ -4,22 +4,38 @@ import { useState } from 'react'
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false)
 
-  const navLinks = ["Home", "About", "Experience", "Projects", "Contact"]
+  const navLinks = [
+    { label: "Home", id: "hero" },
+    { label: "About", id: "about" },
+    { label: "Experience", id: "experience" },
+    { label: "Projects", id: "projects" },
+    { label: "Contact", id: "contact" },
+  ];
 
-  const links = navLinks.map((link) => (
-    <li key={link}>
+  const handleNavClick = (id) => (e) => {
+    e.preventDefault();
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+    setIsOpen(false); 
+  };
+
+  const links = navLinks.map(({ label, id }) => (
+    <li key={id}>
       <a
-        href=""
+        href={`#${id}`}
+        onClick={handleNavClick(id)}
         className={`font-medium md:font-light md:text-lg ${
-          link === "Contact"
+          label === "Contact"
             ? "text-red-500 hover:text-red-700"
             : "text-gray-700 hover:text-highlight"
         } hover:cursor-pointer`}
       >
-        {link}
+        {label}
       </a>
     </li>
-  ))
+  ));
 
   const mainMenu = (
     <nav className="relative z-40 bg-white md:sticky top-0 w-full flex justify-center p-5 text-sm shadow-sm"
