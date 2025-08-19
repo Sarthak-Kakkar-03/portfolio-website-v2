@@ -8,7 +8,7 @@ import LetterDisplay from './LetterDisplay';
 gsap.registerPlugin(ScrollTrigger);
 
 // If your header is exactly 60px tall:
-const HEADER_H = 60;
+const HEADER_H = 64;
 
 const lines = [
   'Shaping',
@@ -83,7 +83,7 @@ export default function LetterCollision() {
       {/* Section fills the screen minus header */}
       <section
         ref={ref}
-        className="ml-8 flex flex-col justify-end items-start pb-8"
+        className="ml-8 flex flex-col justify-center items-start pb-8"
         style={{ minHeight: `calc(100vh - ${HEADER_H}px)`, paddingTop: 24, paddingBottom: 24 }}
       >
         <div className="mb-8">
@@ -102,9 +102,7 @@ export default function LetterCollision() {
           <LetterDisplay word={lines[4]} />
         </div>
       </section>
-
-      {/* TEMP spacer so there’s scroll room until you add real content below. Remove later. */}
-      <div style={{ height: '120vh' }} />
+      
     </>
   );
 }

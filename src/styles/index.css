@@ -16,3 +16,12 @@
   --color-matte:     var(--matte);
   --color-surface: var(--surface);
 }
+
+
+section[data-fullpage] {
+  scroll-snap-align: start;
+}
+
+@media (min-width: 768px) {
+  html, body { scroll-padding-top: 4rem; }
+}
