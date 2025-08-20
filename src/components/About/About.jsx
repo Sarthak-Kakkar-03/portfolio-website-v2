@@ -4,7 +4,7 @@ import paragraphs from "/src/data/about.json";
 const About = () => {
   return (
     <div className="text-matte flex flex-col gap-4">
-      <div className=" flex flex-col-reverse md:grid grid-cols-[75%_25%] p-2 gap-3">
+      <div className=" flex flex-col-reverse md:grid grid-cols-[75%_25%] p-2 gap-2 md:gap-6">
         <div
           className="flex flex-col justify-center items-center 
         gap-2 flex-wrap 

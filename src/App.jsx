@@ -22,6 +22,7 @@ function App() {
         <Header/>
         <Section id='hero'><Hero/></Section>
         <Section id='about' className='flex items-start justify-center'><About/></Section>
+        <Section id='experience'></Section>
       </main>
     </div>
   )
