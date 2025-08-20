@@ -3,8 +3,8 @@ import paragraphs from "/src/data/about.json";
 
 const About = () => {
   return (
-    <div className="text-matte">
-      <div className=" flex flex-col-reverse md:grid grid-cols-[75%_25%] min-h-full min-w-full p-2 gap-3">
+    <div className="text-matte flex flex-col gap-4">
+      <div className=" flex flex-col-reverse md:grid grid-cols-[75%_25%] p-2 gap-3">
         <div
           className="flex flex-col justify-center items-center 
         gap-2 flex-wrap 
@@ -145,12 +145,189 @@ const About = () => {
             </a>
           </div>
           <div className="w-full hidden md:flex justify-center items-center">
-            <a href="/Sarthak_Kakkar_resume.pdf" download="Sarthak_Kakkar_resume.pdf"  className="
+            <a
+              href="/Sarthak_Kakkar_resume.pdf"
+              download="Sarthak_Kakkar_resume.pdf"
+              className="
             bg-surface p-2 px-6 font-bold rounded shadow
             transition-all hover:scale-[1.2] duration-300 hover:shadow-bg
             hover:cursor-pointer border-neutral-900 hover:text-highlight hover:border-highlight border-2"
-            >DOWNLOAD CV</a>
+            >
+              DOWNLOAD CV
+            </a>
           </div>
+        </div>
+      </div>
+
+      <div className="w-full grid grid-cols-1 gap-8 md:grid-cols-4 p-5">
+        <div
+          className="flex flex-col gap-3 bg-white items-center p-3 md:px-10 rounded group shadow md:pt-10
+             transition-transform duration-300 ease-out
+             hover:rotate-x-3 hover:rotate-y-3 hover:scale-105
+             md:aspect-[3/4]
+        "
+        >
+          <div
+            className="p-1 bg-surface rounded shadow transition-all hover:bg-shadow hover:scale-[1.05] hover:translate-y-1
+           gap-2 group-hover:text-highlight"
+          >
+            <svg
+              className="fill-current"
+              width="80px"
+              height="80px"
+              viewBox="0 0 48 48"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>ai</title>
+              <g id="Layer_2" data-name="Layer 2">
+                <g id="invisible_box" data-name="invisible box">
+                  <rect width="48" height="48" fill="none" />
+                </g>
+                <g id="Q3_icons" data-name="Q3 icons">
+                  <g>
+                    <path d="M45.6,18.7,41,14.9V7.5a1,1,0,0,0-.6-.9L30.5,2.1h-.4l-.6.2L24,5.9,18.5,2.2,17.9,2h-.4L7.6,6.6a1,1,0,0,0-.6.9v7.4L2.4,18.7a.8.8,0,0,0-.4.8v9H2a.8.8,0,0,0,.4.8L7,33.1v7.4a1,1,0,0,0,.6.9l9.9,4.5h.4l.6-.2L24,42.1l5.5,3.7.6.2h.4l9.9-4.5a1,1,0,0,0,.6-.9V33.1l4.6-3.8a.8.8,0,0,0,.4-.7V19.4h0A.8.8,0,0,0,45.6,18.7Zm-5.1,6.8H42v1.6l-3.5,2.8-.4.3-.4-.2a1.4,1.4,0,0,0-2,.7,1.5,1.5,0,0,0,.6,2l.7.3h0v5.4l-6.6,3.1-4.2-2.8-.7-.5V25.5H27a1.5,1.5,0,0,0,0-3H25.5V9.7l.7-.5,4.2-2.8L37,9.5v5.4h0l-.7.3a1.5,1.5,0,0,0-.6,2,1.4,1.4,0,0,0,1.3.9l.7-.2.4-.2.4.3L42,20.9v1.6H40.5a1.5,1.5,0,0,0,0,3ZM21,25.5h1.5V38.3l-.7.5-4.2,2.8L11,38.5V33.1h0l.7-.3a1.5,1.5,0,0,0,.6-2,1.4,1.4,0,0,0-2-.7l-.4.2-.4-.3L6,27.1V25.5H7.5a1.5,1.5,0,0,0,0-3H6V20.9l3.5-2.8.4-.3.4.2.7.2a1.4,1.4,0,0,0,1.3-.9,1.5,1.5,0,0,0-.6-2L11,15h0V9.5l6.6-3.1,4.2,2.8.7.5V22.5H21a1.5,1.5,0,0,0,0,3Z" />
+                    <path d="M13.9,9.9a1.8,1.8,0,0,0,0,2.2l2.6,2.5v2.8l-4,4v5.2l4,4v2.8l-2.6,2.5a1.8,1.8,0,0,0,0,2.2,1.5,1.5,0,0,0,1.1.4,1.5,1.5,0,0,0,1.1-.4l3.4-3.5V29.4l-4-4V22.6l4-4V13.4L16.1,9.9A1.8,1.8,0,0,0,13.9,9.9Z" />
+                    <path d="M31.5,14.6l2.6-2.5a1.8,1.8,0,0,0,0-2.2,1.8,1.8,0,0,0-2.2,0l-3.4,3.5v5.2l4,4v2.8l-4,4v5.2l3.4,3.5a1.7,1.7,0,0,0,2.2,0,1.8,1.8,0,0,0,0-2.2l-2.6-2.5V30.6l4-4V21.4l-4-4Z" />
+                  </g>
+                </g>
+              </g>
+            </svg>
+          </div>
+          <h2 className="font-bold text-xl">AI/ML</h2>
+          <p className="text-center">
+            Proficient in applying modern ML techniques to solve real-world
+            problems, with experience training and fine-tuning models for
+            performance and interpretability. Skilled in building LLM-powered
+            applications using frameworks such as{" "}
+            <b className="group-hover:text-highlight">LangChain</b> and{" "}
+            <b className="group-hover:text-highlight">LangGraph</b>.
+          </p>
+        </div>
+
+        <div
+          className="flex flex-col gap-3 bg-white items-center p-3 md:px-10 rounded group shadow md:pt-10
+             transition-transform duration-300 ease-out
+             hover:rotate-x-3 hover:rotate-y-3 hover:scale-105
+             md:aspect-[3/4]
+        "
+        >
+          <div
+            className="p-1 bg-surface rounded shadow transition-all hover:bg-shadow hover:scale-[1.05] hover:translate-y-1
+          group-hover:text-highlight gap-2"
+          >
+            <svg
+              className="fill-current"
+              width="80px"
+              height="80px"
+              viewBox="0 0 32 32"
+              id="icon"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>datastore</title>
+              <circle cx="23" cy="23" r="1" />
+              <rect x="8" y="22" width="12" height="2" />
+              <circle cx="23" cy="9" r="1" />
+              <rect x="8" y="8" width="12" height="2" />
+              <path d="M26,14a2,2,0,0,0,2-2V6a2,2,0,0,0-2-2H6A2,2,0,0,0,4,6v6a2,2,0,0,0,2,2H8v4H6a2,2,0,0,0-2,2v6a2,2,0,0,0,2,2H26a2,2,0,0,0,2-2V20a2,2,0,0,0-2-2H24V14ZM6,6H26v6H6ZM26,26H6V20H26Zm-4-8H10V14H22Z" />
+              <rect width="32" height="32" fill="none" />
+            </svg>
+          </div>
+          <h2 className="font-bold text-xl">Backend Development</h2>
+          <p className="text-center">
+            Experienced in designing and implementing scalable backend systems
+            using <b className="group-hover:text-highlight">Python, Java,</b>{" "}
+            and <b className="group-hover:text-highlight">C++</b>. Strong focus
+            on building RESTful APIs, asynchronous architectures, and{" "}
+            database-driven workflows.
+          </p>
+        </div>
+
+        <div
+          className="flex flex-col gap-3 bg-white items-center p-3 md:px-10 rounded group shadow md:pt-10
+             transition-transform duration-300 ease-out
+             hover:rotate-x-3 hover:rotate-y-3 hover:scale-105
+             md:aspect-[3/4]
+        "
+        >
+          <div
+            className="p-1 bg-surface rounded shadow transition-all hover:bg-shadow hover:scale-[1.05] hover:translate-y-1
+          group-hover:text-highlight gap-2"
+          >
+            <svg
+              className="fill-current"
+              width="80px"
+              height="80px"
+              viewBox="0 0 16 16"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M8 3V0H6V3H8Z" />
+              <path d="M0.792893 2.20711L3.29289 4.70711L4.70711 3.29289L2.20711 0.792893L0.792893 2.20711Z" />
+              <path d="M6 5L5 6.00001L8 15H10L10.7172 12.1314L14.2929 15.7071L15.7071 14.2929L12.1314 10.7172L15 10V8L6 5Z" />
+              <path d="M0 6H3V8H0V6Z" />
+            </svg>
+          </div>
+          <h2 className="font-bold text-xl">Frontend Development</h2>
+          <p className="text-center">
+            Skilled in creating responsive, accessible, and visually engaging
+            user interfaces with{" "}
+            <b className="group-hover:text-highlight">React</b> and{" "}
+            <b className="group-hover:text-highlight">Tailwind CSS</b>.
+            Proficient in building modular component systems, implementing
+            smooth animations and interactions, and leveraging modern build
+            tooling.
+          </p>
+        </div>
+
+        <div
+          className="flex flex-col gap-3 bg-white items-center p-3 md:px-10 rounded group shadow md:pt-10
+             transition-transform duration-300 ease-out
+             hover:rotate-x-3 hover:rotate-y-3 hover:scale-105
+             md:aspect-[3/4]
+        "
+        >
+          <div
+            className="p-1 bg-surface rounded shadow transition-all hover:bg-shadow hover:scale-[1.05] hover:translate-y-1
+          group-hover:text-highlight gap-2"
+          >
+            <svg
+              className="fill-current"
+              height="80px"
+              width="80px"
+              version="1.1"
+              id="Icons"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlnsXlink="http://www.w3.org/1999/xlink"
+              viewBox="0 0 32 32"
+              xmlSpace="preserve"
+            >
+              <path
+                d="M29.9,17.5C29.7,17.2,29.4,17,29,17c-2.2,0-4.3,1-5.6,2.8L22.5,21c-1.1,1.3-2.8,2-4.5,2h-3c-0.6,0-1-0.4-1-1s0.4-1,1-1h1.9
+              c1.6,0,3.1-1.3,3.1-2.9c0,0,0-0.1,0-0.1c0-0.5-0.5-1-1-1l-6.1,0c-3.6,0-6.5,1.6-8.1,4.2l-2.7,4.2c-0.2,0.3-0.2,0.7,0,1l3,5
+              c0.1,0.2,0.4,0.4,0.6,0.5c0.1,0,0.1,0,0.2,0c0.2,0,0.4-0.1,0.6-0.2c3.8-2.5,8.2-3.8,12.7-3.8c3.3,0,6.3-1.8,7.9-4.7l2.7-4.8
+              C30,18.2,30,17.8,29.9,17.5z"
+              />
+              <path
+                d="M4.5,18c0.1,0,0.3,0,0.4,0c1.2-1.1,2.7-1.9,4.3-2.4C9.1,15.1,9,14.5,9,14c0-4.4,3.6-8,8-8s8,3.6,8,8c0,0.7-0.1,1.4-0.3,2.1
+              C26,15.4,27.5,15,29,15c0.7,0,1.4,0.3,1.9,0.7C31,15.1,31,14.6,31,14c0-1.1-0.1-2.2-0.4-3.3c-0.1-0.5-0.6-0.8-1.1-0.8
+              c-1.2,0.2-2.4-0.4-3-1.5c-0.6-1-0.5-2.4,0.2-3.3c0.3-0.4,0.3-1-0.1-1.3C25,2.3,23.1,1.2,21,0.6c-0.5-0.1-1,0.1-1.2,0.6
+              C19.3,2.3,18.2,3,17,3s-2.3-0.7-2.8-1.8C14,0.7,13.5,0.4,13,0.6C10.9,1.2,9,2.3,7.4,3.9C7,4.2,7,4.8,7.3,5.2c0.7,1,0.8,2.3,0.2,3.3
+              c-0.6,1-1.8,1.6-3,1.5c-0.5-0.1-1,0.3-1.1,0.8C3.1,11.8,3,12.9,3,14s0.1,2.2,0.4,3.3C3.5,17.8,4,18.1,4.5,18z"
+              />
+            </svg>
+          </div>
+          <h2 className="font-bold text-xl whitespace-nowrap text-[clamp(0.9rem,2vw,1.25rem)]">
+            Embedded Software Development
+          </h2>
+          <p className="text-center">
+            Proficient in multiple hardware communication protocols including
+            HID and Bluetooth. Designed and implemented an{" "}
+            <b className="group-hover:text-highlight">
+              asynchronous architecture
+            </b>{" "}
+            integrating multiple data collectors to build a
+            <b className="group-hover:text-highlight"> performance-sensitive</b>{" "}
+            system approved for medical research.
+          </p>
         </div>
       </div>
     </div>
