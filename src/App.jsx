@@ -6,12 +6,13 @@ import Header from './components/header/header'
 import Hero from './components/Hero/Hero'
 import Section from './components/Section'
 import About from './components/About/about'
+import Experience from './components/Experience/Experience'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className='min-h-screen bg-white'>
+    <div className='min-h-screen bg-card'>
       <main
       className="flex-1 overscroll-contain focus:outline-none
     md:snap-y md:snap-proximity md:scroll-pt-16"
@@ -22,7 +23,7 @@ function App() {
         <Header/>
         <Section id='hero'><Hero/></Section>
         <Section id='about' className='flex items-start justify-center'><About/></Section>
-        <Section id='experience'></Section>
+        <Section id='experience'><Experience/></Section>
       </main>
     </div>
   )

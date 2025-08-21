@@ -10,6 +10,7 @@ export default {
         highlight: "var(--highlight)",
         matte: "var(--matte)",
         surface: "var(--surface)",
+        card: "var(--card)",
       },
     },
   },

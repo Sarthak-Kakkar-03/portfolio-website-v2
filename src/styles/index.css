@@ -6,9 +6,11 @@
 
 /* LIGHT values you gave */
 :root {
-  --highlight: #0066cc;   /* brand blue */
-  --matte:   #1d1d1f;   /* near-black */
-  --surface:#f5f5f7;  /* subtle gray */
+  --highlight: #66666e;   /* brand blue */
+  --matte:   #191f22;   /* near-black */
+  --surface:#f4f4f6;  /* subtle gray */
+  --card: #e6e6e9ef;
+
 }
 
 

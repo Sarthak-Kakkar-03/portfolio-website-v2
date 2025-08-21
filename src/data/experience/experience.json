@@ -1,0 +1,22 @@
+[
+    {
+        "companyName": "Movement Neuroscience Lab",
+        "position": "Embedded Systems Engineer",
+        "logoPath": "/src/assets/experience/mnl_logo.png"
+    },
+    {
+        "companyName": "Northeastern University",
+        "position":"Teaching Assistant",
+        "logoPath": "/src/assets/experience/nu_logo.png"
+    },
+    {
+        "companyName": "Wissen Infotech",
+        "position":"LLM Operations Intern",
+        "logoPath": "/src/assets/experience/wissen_logo.png"
+    },
+    {
+        "companyName": "Applify",
+        "position":"Software Engineer Intern",
+        "logoPath": "/src/assets/experience/applify_logo.png"
+    }
+]

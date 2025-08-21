@@ -8,7 +8,7 @@ const About = () => {
         <div
           className="flex flex-col justify-center items-center 
         gap-2 flex-wrap 
-        md:shadow rounded-4xl bg-white p-5
+        md:shadow rounded-4xl bg-card p-5
         transition-all duration-300 ease-in-out
         transform-gpu hover:scale-[1.02] hover:translate-y-1 hover:shadow-lg
         group
@@ -54,7 +54,7 @@ const About = () => {
           </div>
         </div>
         <div
-          className="h-full md:bg-white rounded-4xl p-3 md:flex flex-col gap-5
+          className="h-full md:bg-card rounded-4xl p-3 md:flex flex-col gap-5
         justify-center items-center md:shadow
         transition-all duration-300 ease-in-out
         transform-gpu hover:scale-[1.02] hover:translate-y-1 hover:shadow-lg
@@ -161,7 +161,7 @@ const About = () => {
 
       <div className="w-full grid grid-cols-1 gap-8 md:grid-cols-4 p-5">
         <div
-          className="flex flex-col gap-3 bg-white items-center p-3 md:px-10 rounded group shadow md:pt-10
+          className="flex flex-col gap-3 bg-card items-center p-3 md:px-10 rounded group shadow md:pt-10
              transition-transform duration-300 ease-out
              hover:rotate-x-3 hover:rotate-y-3 hover:scale-105
              md:aspect-[3/4]
@@ -205,7 +205,7 @@ const About = () => {
         </div>
 
         <div
-          className="flex flex-col gap-3 bg-white items-center p-3 md:px-10 rounded group shadow md:pt-10
+          className="flex flex-col gap-3 bg-card items-center p-3 md:px-10 rounded group shadow md:pt-10
              transition-transform duration-300 ease-out
              hover:rotate-x-3 hover:rotate-y-3 hover:scale-105
              md:aspect-[3/4]
@@ -243,7 +243,7 @@ const About = () => {
         </div>
 
         <div
-          className="flex flex-col gap-3 bg-white items-center p-3 md:px-10 rounded group shadow md:pt-10
+          className="flex flex-col gap-3 bg-card items-center p-3 md:px-10 rounded group shadow md:pt-10
              transition-transform duration-300 ease-out
              hover:rotate-x-3 hover:rotate-y-3 hover:scale-105
              md:aspect-[3/4]
@@ -279,7 +279,7 @@ const About = () => {
         </div>
 
         <div
-          className="flex flex-col gap-3 bg-white items-center p-3 md:px-10 rounded group shadow md:pt-10
+          className="flex flex-col gap-3 bg-card items-center p-3 md:px-10 rounded group shadow md:pt-10
              transition-transform duration-300 ease-out
              hover:rotate-x-3 hover:rotate-y-3 hover:scale-105
              md:aspect-[3/4]

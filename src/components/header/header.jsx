@@ -29,7 +29,7 @@ const Header = () => {
         className={`font-medium md:font-light md:text-lg ${
           label === "Contact"
             ? "text-red-500 hover:text-red-700"
-            : "text-gray-700 hover:text-highlight"
+            : "text-matte hover:text-highlight"
         } hover:cursor-pointer`}
       >
         {label}
@@ -38,7 +38,7 @@ const Header = () => {
   ));
 
   const mainMenu = (
-    <nav className="relative z-40 bg-white md:sticky top-0 w-full flex justify-center p-5 text-sm shadow-sm"
+    <nav className="relative z-40 bg-card md:sticky top-0 w-full flex justify-center p-5 text-sm shadow-sm"
     style={{height:"4rem"}}>
       
       <div className="hidden md:flex flex-1 md:max-w-3xl justify-center">

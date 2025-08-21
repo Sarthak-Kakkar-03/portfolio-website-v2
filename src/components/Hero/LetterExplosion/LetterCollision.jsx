@@ -99,9 +99,10 @@ export default function LetterCollision() {
         <div className="flex flex-wrap">
           <LetterDisplay word={lines[4]} />
         </div>
-        <div className="hidden md:flex w-full justify-end
+        <div className="hidden md:flex flex-col items-center w-full justify-end
         animate-bounce
         ">
+          <p>Scroll Down</p>
           <svg
             width="22px"
             height="22px"
