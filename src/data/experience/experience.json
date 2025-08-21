@@ -1,22 +1,30 @@
 [
     {
         "companyName": "Movement Neuroscience Lab",
-        "position": "Embedded Systems Engineer",
-        "logoPath": "/src/assets/experience/mnl_logo.png"
+        "position": "Embedded Systems Engineer Co-op",
+        "logoPath": "/src/assets/experience/mnl_logo.png",
+        "description": "Built an integrated stimulator–sensor–control system and modular async API, adding patient-feedback visualization to improve outcomes.",
+        "duration": "January 2025 - June 2025"
     },
     {
         "companyName": "Northeastern University",
         "position":"Teaching Assistant",
-        "logoPath": "/src/assets/experience/nu_logo.png"
+        "logoPath": "/src/assets/experience/nu_logo.png",
+        "description": "Served as Teaching Assistant for Northeastern’s Programming in C++ course, supporting 100+ students via hybrid office hours and rigorous assessments to improve comprehension and project outcomes.",
+        "duration": "September 2024 - December 2024"
     },
     {
         "companyName": "Wissen Infotech",
         "position":"LLM Operations Intern",
-        "logoPath": "/src/assets/experience/wissen_logo.png"
+        "logoPath": "/src/assets/experience/wissen_logo.png",
+        "description": "Architected an LLM accelerator and multi-agent test/auto-fix system, shipping a chain-based codebase that improved efficiency 30%.",
+        "duration": "June 2024 - August 2024"
     },
     {
         "companyName": "Applify",
         "position":"Software Engineer Intern",
-        "logoPath": "/src/assets/experience/applify_logo.png"
+        "logoPath": "/src/assets/experience/applify_logo.png",
+        "description": "Built a Java+JDBC backend and streamlined Agile on JIRA, reducing errors 25% and improving client communication.",
+        "duration": "June 2023 - August 2023"
     }
 ]

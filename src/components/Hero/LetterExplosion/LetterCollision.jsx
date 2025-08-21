@@ -77,7 +77,7 @@ export default function LetterCollision() {
       {/* Section fills the screen minus header */}
       <section
         ref={ref}
-        className="ml-8 flex flex-col justify-center items-start pb-8"
+        className="ml-8 flex flex-col justify-center items-start pb-8 text-matte"
         style={{
           minHeight: `calc(100vh - ${HEADER_H}px)`,
           paddingTop: 24,
@@ -99,24 +99,26 @@ export default function LetterCollision() {
         <div className="flex flex-wrap">
           <LetterDisplay word={lines[4]} />
         </div>
-        <div className="hidden md:flex flex-col items-center w-full justify-end
+        <div className="hidden md:flex flex-col items-end w-full justify-end
         animate-bounce
         ">
-          <p>Scroll Down</p>
-          <svg
-            width="22px"
-            height="22px"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              fillRule="evenodd"
-              clipRule="evenodd"
-              d="M12 3C12.5523 3 13 3.44772 13 4V17.5858L18.2929 12.2929C18.6834 11.9024 19.3166 11.9024 19.7071 12.2929C20.0976 12.6834 20.0976 13.3166 19.7071 13.7071L12.7071 20.7071C12.3166 21.0976 11.6834 21.0976 11.2929 20.7071L4.29289 13.7071C3.90237 13.3166 3.90237 12.6834 4.29289 12.2929C4.68342 11.9024 5.31658 11.9024 5.70711 12.2929L11 17.5858V4C11 3.44772 11.4477 3 12 3Z"
-              fill="#000000"
-            />
-          </svg>
+          <div className="flex flex-col items-center text-center p-1">
+            <p>Scroll Down</p>
+            <svg
+              width="22px"
+              height="22px"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="fill-matte"
+            >
+              <path
+                fillRule="evenodd"
+                clipRule="evenodd"
+                d="M12 3C12.5523 3 13 3.44772 13 4V17.5858L18.2929 12.2929C18.6834 11.9024 19.3166 11.9024 19.7071 12.2929C20.0976 12.6834 20.0976 13.3166 19.7071 13.7071L12.7071 20.7071C12.3166 21.0976 11.6834 21.0976 11.2929 20.7071L4.29289 13.7071C3.90237 13.3166 3.90237 12.6834 4.29289 12.2929C4.68342 11.9024 5.31658 11.9024 5.70711 12.2929L11 17.5858V4C11 3.44772 11.4477 3 12 3Z"
+              />
+            </svg>
+          </div>
         </div>
       </section>
     </>
