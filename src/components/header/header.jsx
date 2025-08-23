@@ -44,11 +44,11 @@ const Header = () => {
 
 
   const mainMenu = (
-    <nav className="relative z-40 bg-card md:sticky top-0 w-full flex justify-between p-5 text-sm shadow-sm"
+    <nav className="relative z-40 bg-card md:sticky top-0 w-full flex justify-between md:p-5 p-2 text-sm shadow-sm box-border"
     style={{height:"4rem"}}>
-      <div className='hidden md:block'>Brand Logo</div>
+      <img className='h-max-full hidden md:block' src="/src/assets/sk_icon.png" alt="SK logo" />
       
-      <div className="hidden md:flex flex-1 md:max-w-3xl justify-center">
+      <div className="hidden md:flex flex-1 md:max-w-3xl justify-center items-center">
         <ul className="flex flex-1 justify-between">
           {links}
         </ul>
@@ -71,7 +71,7 @@ const Header = () => {
         </svg>
       </button>
       <div className="flex md:hidden flex-1 items-center justify-between p-1">
-        <div>Branding</div>
+        <img className="h-full" src="/src/assets/sk_icon.png" alt="" />
         <button onClick={() => { setIsOpen(!isOpen) }}>
           <svg width="25px" height="25px" viewBox="0 0 24 24" className='stroke-matte fill-matte' xmlns="http://www.w3.org/2000/svg">
             <path fillRule="evenodd" clipRule="evenodd" d="M4 5C3.44772 5 3 5.44772 3 6C3 6.55228 3.44772 7 4 7H20C20.5523 7 21 6.55228 21 6C21 5.44772 20.5523 5 20 5H4ZM7 12C7 11.4477 7.44772 11 8 11H20C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13H8C7.44772 13 7 12.5523 7 12ZM13 18C13 17.4477 13.4477 17 14 17H20C20.5523 17 21 17.4477 21 18C21 18.5523 20.5523 19 20 19H14C13.4477 19 13 18.5523 13 18Z" />
