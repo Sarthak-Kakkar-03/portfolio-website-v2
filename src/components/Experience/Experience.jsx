@@ -4,8 +4,8 @@ import experienceData from "/src/data/experience/experience.json";
 const Experience = () => {
   //console.log(experienceData);
   return (
-    <div className="flex flex-col justify-start gap-3 items-stretch px-5 md:px-[100px]">
-      <h1 className="font-extrabold text-4xl">My Experience</h1>
+    <div className="flex flex-col justify-start gap-3 items-stretch px-5 md:px-[100px] text-matte">
+      <h1 className="font-extrabold text-4xl text-matte">My Experience</h1>
       <div className="grid grid-cols-1 gap-5">
         {experienceData.map((exp, idx) => {
           return (

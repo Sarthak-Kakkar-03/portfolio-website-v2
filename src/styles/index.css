@@ -13,6 +13,15 @@
 
 }
 
+:root.dark,
+[data-theme="dark"] {
+  --highlight: #FF8000;
+  --matte: #e6e6e6;    
+  --surface: #212122;   
+  --card: #020403;      
+}
+
+
 
 section[data-fullpage] {
   scroll-snap-align: start;
