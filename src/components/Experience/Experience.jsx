@@ -1,5 +1,6 @@
 import React from "react";
 import experienceData from "/src/data/experience/experience.json";
+import { Link } from "react-router-dom";
 
 const Experience = () => {
   //console.log(experienceData);
@@ -7,9 +8,9 @@ const Experience = () => {
     <div className="flex flex-col justify-start gap-3 items-stretch px-5 md:px-[100px] text-matte">
       <h1 className="font-extrabold text-4xl text-matte">My Experience</h1>
       <div className="grid grid-cols-1 gap-5">
-        {experienceData.map((exp, idx) => {
+        {experienceData.map((exp) => {
           return (
-            <div key={idx} className="flex group">
+            <div key={exp.id} className="flex group">
               <div className="hidden md:block bg-none group-hover:text-highlight">
                 <svg
                   className="min-h-full stroke-current fill-current aspect-[1/2]"
@@ -36,7 +37,7 @@ const Experience = () => {
                   />
                 </svg>
               </div>
-              <button
+              <Link to={`/experience/${exp.id}`}
                 className="flex flex-1 bg-card rounded-xl group-hover:cursor-pointer 
               transition-all shadow group-hover:shadow-xl group-hover:-translate-y-2 group-hover:scale-[1.02]
               group-hover:border border-highlight p-2 duration-300"
@@ -55,7 +56,7 @@ const Experience = () => {
                             {exp.description}
                         </div>
                     </div>
-              </button>
+              </Link>
             </div>
           );
         })}

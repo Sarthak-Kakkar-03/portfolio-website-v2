@@ -1,11 +1,16 @@
 // App.tsx
 import { useEffect } from "react";
-import { createBrowserRouter, RouterProvider, useLocation } from "react-router-dom";
+import {
+  createBrowserRouter,
+  RouterProvider,
+  useLocation,
+} from "react-router-dom";
 import Header from "./components/header/header";
 import Section from "./components/Section";
 import Hero from "./components/Hero/Hero";
 import About from "./components/About/About";
 import Experience from "./components/Experience/Experience";
+import ExperiencePage from "./components/Experience/ExperiencePage";
 
 function ScrollToHash() {
   const { hash } = useLocation();
@@ -22,18 +27,27 @@ function HomePage() {
     <>
       <Header />
       <ScrollToHash />
-      <Section id="hero"><Hero /></Section>
-      <Section id="about" className="flex items-start justify-center"><About /></Section>
-      <Section id="experience"><Experience /></Section>
+      <Section id="hero">
+        <Hero />
+      </Section>
+      <Section id="about" className="flex items-start justify-center">
+        <About />
+      </Section>
+      <Section id="experience">
+        <Experience />
+      </Section>
     </>
   );
 }
 
-const router = createBrowserRouter([{ path: "/", element: <HomePage /> }]);
+const router = createBrowserRouter([
+  { path: "/", element: <HomePage /> },
+  { path: "/experience/:id", element: <><Header/><ExperiencePage /></> },
+]);
 
 export default function App() {
   return (
-    <div className="min-h-screen bg-card">
+    <div className="min-h-screen bg-surface">
       <main className="flex-1 overscroll-contain focus:outline-none md:snap-y md:snap-proximity md:scroll-pt-16">
         <RouterProvider router={router} />
       </main>
