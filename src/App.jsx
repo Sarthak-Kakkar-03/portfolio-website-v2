@@ -1,32 +1,42 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Header from './components/header/header'
-import Hero from './components/Hero/Hero'
-import Section from './components/Section'
-import About from './components/About/About'
-import Experience from './components/Experience/Experience'
+// App.tsx
+import { useEffect } from "react";
+import { createBrowserRouter, RouterProvider, useLocation } from "react-router-dom";
+import Header from "./components/header/header";
+import Section from "./components/Section";
+import Hero from "./components/Hero/Hero";
+import About from "./components/About/About";
+import Experience from "./components/Experience/Experience";
 
-function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-    <div className='min-h-screen bg-card'>
-      <main
-      className="flex-1 overscroll-contain focus:outline-none
-    md:snap-y md:snap-proximity md:scroll-pt-16"
-      tabIndex={-1}
-      role="region"
-      aria-label="Main content"
-      >
-        <Header/>
-        <Section id='hero'><Hero/></Section>
-        <Section id='about' className='flex items-start justify-center'><About/></Section>
-        <Section id='experience'><Experience/></Section>
-      </main>
-    </div>
-  )
+function ScrollToHash() {
+  const { hash } = useLocation();
+  useEffect(() => {
+    if (!hash) return;
+    const el = document.getElementById(hash.slice(1));
+    if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+  }, [hash]);
+  return null;
 }
 
-export default App
+function HomePage() {
+  return (
+    <>
+      <Header />
+      <ScrollToHash />
+      <Section id="hero"><Hero /></Section>
+      <Section id="about" className="flex items-start justify-center"><About /></Section>
+      <Section id="experience"><Experience /></Section>
+    </>
+  );
+}
+
+const router = createBrowserRouter([{ path: "/", element: <HomePage /> }]);
+
+export default function App() {
+  return (
+    <div className="min-h-screen bg-card">
+      <main className="flex-1 overscroll-contain focus:outline-none md:snap-y md:snap-proximity md:scroll-pt-16">
+        <RouterProvider router={router} />
+      </main>
+    </div>
+  );
+}

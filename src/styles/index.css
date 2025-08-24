@@ -33,3 +33,7 @@ section[data-fullpage] {
 * {
   font-family: "Outfit", Arial, Helvetica, sans-serif;
 }
+
+html {
+  background-color: var(--surface);
+}
