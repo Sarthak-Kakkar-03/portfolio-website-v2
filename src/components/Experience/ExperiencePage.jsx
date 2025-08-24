@@ -18,7 +18,7 @@ const ExperiencePage = () => {
           <Link to={"/#experience"}>&larr; Back to Experience</Link>
         </div>
         <div className="flex gap-3">
-          <a href={exp.companyWebsite}>
+          <a href={exp.companyWebsite} target="_blank">
             <div
               className="rounded-xl aspect-square flex justify-center items-center
             bg-surface p-1.5 max-h-[75px] md:max-h-[150px] 
@@ -32,6 +32,7 @@ const ExperiencePage = () => {
             <a
               className="text-lg md:text-3xl hover:text-highlight"
               href={exp.companyWebsite}
+              target="_blank"
             >
               {exp.companyName}
             </a>
@@ -58,7 +59,7 @@ const ExperiencePage = () => {
         <PageSection title={"Technologies Used"}>
           <div className="flex flex-wrap gap-3">
             {exp.technologies.map((tech, idx) => {
-              console.log(tech);
+              //console.log(tech);
               return (
                 <div
                   key={idx}

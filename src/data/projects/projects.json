@@ -1,7 +1,7 @@
 [
   {
     "title": "Portfolio Website",
-    "imageSrc": "projects/website.jpg",
+    "imageSrc": "/src/assets/projects/website.jpg",
     "description": "A personal portfolio website, showcasing my skills and experience.",
     "skills": ["JavaScript", "Node", "React", "HTML", "CSS"],
     "demo": "https://www.example.com",
@@ -9,7 +9,7 @@
   },
   {
     "title": "Random Forest Weather Analysis",
-    "imageSrc": "projects/weather_analysis.png",
+    "imageSrc": "/src/assets/projects/weather_analysis.png",
     "description": "Using random forest to classify weather conditions from an API.",
     "skills": ["Python", "Scikit-learn", "Random Forest"],
     "demo": "",
@@ -17,7 +17,7 @@
   },
   {
     "title": "EcoSim: Dynamic Predator-Prey Ecosystem",
-    "imageSrc": "projects/ecosim_cover.jpeg",
+    "imageSrc": "/src/assets/projects/ecosim_cover.jpeg",
     "description": "A C++ program simulating realistic predator-prey dynamics.",
     "skills": ["C++", "Linux", "OOP", "NCurses"],
     "demo": "",
@@ -25,7 +25,7 @@
   },
   {
     "title": "Battleship Game",
-    "imageSrc": "projects/battleship_cli.png",
+    "imageSrc": "/src/assets/projects/battleship_cli.png",
     "description": "A CLI battleship game with a bot to play against or to use against others online.",
     "skills": ["Java", "Proxy Server Design", "APIs", "Algorithm Design"],
     "demo": "",
@@ -33,7 +33,7 @@
   },
   {
     "title": "Calendar App",
-    "imageSrc": "projects/calendar.jpg",
+    "imageSrc": "/src/assets/projects/calendar.jpg",
     "description": "A local calendar application with a GUI made using JavaFX.",
     "skills": ["Java", "JavaFX", "OOP", "JSON Database"],
     "demo": "",
@@ -41,7 +41,7 @@
   },
   {
     "title": "Snake Game",
-    "imageSrc": "projects/snake.png",
+    "imageSrc": "/src/assets/projects/snake.png",
     "description": "A CLI based snake game made in C++ and deployed on Khoury Linux server.",
     "skills": ["C++", "Linux", "NCurses", "OOP"],
     "demo": "",

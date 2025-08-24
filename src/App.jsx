@@ -37,7 +37,7 @@ function HomePage() {
       <Section id="experience">
         <Experience />
       </Section>
-      <Section id="projects">
+      <Section id="projects" >
         <Projects/>
       </Section>
     </>
