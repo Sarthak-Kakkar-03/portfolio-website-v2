@@ -1,8 +1,9 @@
-import React from 'react'
-import { useState } from 'react'
+import React from "react";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
-  const [isOpen, setIsOpen] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
     { label: "Home", id: "hero" },
@@ -16,9 +17,9 @@ const Header = () => {
     e.preventDefault();
     const el = document.getElementById(id);
     if (el) {
-      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      el.scrollIntoView({ behavior: "smooth", block: "start" });
     }
-    setIsOpen(false); 
+    setIsOpen(false);
   };
 
   const links = navLinks.map(({ label, id }) => (
@@ -38,32 +39,41 @@ const Header = () => {
   ));
 
   const toggleTheme = () => {
-  const root = document.documentElement;
-  const isDark = root.classList.toggle("dark");
-};
-
+    const root = document.documentElement;
+    const isDark = root.classList.toggle("dark");
+  };
 
   const mainMenu = (
-    <nav className="relative z-40 bg-card md:sticky top-0 w-full flex justify-between md:p-5 p-2 text-sm shadow-sm box-border"
-    style={{height:"4rem"}}>
-      <img className='h-max-full hidden md:block' src="/src/assets/sk_icon.png" alt="SK logo" />
-      
+    <nav
+      className="relative z-40 bg-card md:sticky top-0 w-full flex justify-between md:p-5 p-2 text-sm shadow-sm box-border"
+      style={{ height: "4rem" }}
+    >
+      <Link to={"/"} className="h-max-full flex justify-center">
+        <img
+          className="h-max-full hidden md:block max-h-[40px]"
+          src="/src/assets/sk_icon.png"
+          alt="SK logo"
+        />
+      </Link>
+
       <div className="hidden md:flex flex-1 md:max-w-3xl justify-center items-center">
-        <ul className="flex flex-1 justify-between">
-          {links}
-        </ul>
+        <ul className="flex flex-1 justify-between">{links}</ul>
       </div>
 
-      <button className='hidden md:block' onClick={toggleTheme}>
-        <svg className='h-full fill-current text-black dark:text-highlight' viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+      <button className="hidden md:block" onClick={toggleTheme}>
+        <svg
+          className="h-full fill-current text-black dark:text-highlight"
+          viewBox="0 0 48 48"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <title>dark-mode-solid</title>
           <g id="Layer_2" data-name="Layer 2">
             <g id="Icons">
               <g>
-                <rect width="48" height="48" fill="none"/>
+                <rect width="48" height="48" fill="none" />
                 <g>
-                  <path d="M14,24A10,10,0,0,0,24,34V14A10,10,0,0,0,14,24Z"/>
-                  <path d="M24,2A22,22,0,1,0,46,24,21.9,21.9,0,0,0,24,2ZM6,24A18.1,18.1,0,0,1,24,6v8a10,10,0,0,1,0,20v8A18.1,18.1,0,0,1,6,24Z"/>
+                  <path d="M14,24A10,10,0,0,0,24,34V14A10,10,0,0,0,14,24Z" />
+                  <path d="M24,2A22,22,0,1,0,46,24,21.9,21.9,0,0,0,24,2ZM6,24A18.1,18.1,0,0,1,24,6v8a10,10,0,0,1,0,20v8A18.1,18.1,0,0,1,6,24Z" />
                 </g>
               </g>
             </g>
@@ -71,22 +81,61 @@ const Header = () => {
         </svg>
       </button>
       <div className="flex md:hidden flex-1 items-center justify-between p-1">
-        <img className="h-full" src="/src/assets/sk_icon.png" alt="" />
-        <button onClick={() => { setIsOpen(!isOpen) }}>
-          <svg width="25px" height="25px" viewBox="0 0 24 24" className='stroke-matte fill-matte' xmlns="http://www.w3.org/2000/svg">
-            <path fillRule="evenodd" clipRule="evenodd" d="M4 5C3.44772 5 3 5.44772 3 6C3 6.55228 3.44772 7 4 7H20C20.5523 7 21 6.55228 21 6C21 5.44772 20.5523 5 20 5H4ZM7 12C7 11.4477 7.44772 11 8 11H20C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13H8C7.44772 13 7 12.5523 7 12ZM13 18C13 17.4477 13.4477 17 14 17H20C20.5523 17 21 17.4477 21 18C21 18.5523 20.5523 19 20 19H14C13.4477 19 13 18.5523 13 18Z" />
+        <Link to={"/"} className="h-max-full flex justify-center">
+          <img
+            className="h-full max-h-[40px]"
+            src="/src/assets/sk_icon.png"
+            alt=""
+          />
+        </Link>
+        <button
+          onClick={() => {
+            setIsOpen(!isOpen);
+          }}
+        >
+          <svg
+            width="25px"
+            height="25px"
+            viewBox="0 0 24 24"
+            className="stroke-matte fill-matte"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fillRule="evenodd"
+              clipRule="evenodd"
+              d="M4 5C3.44772 5 3 5.44772 3 6C3 6.55228 3.44772 7 4 7H20C20.5523 7 21 6.55228 21 6C21 5.44772 20.5523 5 20 5H4ZM7 12C7 11.4477 7.44772 11 8 11H20C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13H8C7.44772 13 7 12.5523 7 12ZM13 18C13 17.4477 13.4477 17 14 17H20C20.5523 17 21 17.4477 21 18C21 18.5523 20.5523 19 20 19H14C13.4477 19 13 18.5523 13 18Z"
+            />
           </svg>
         </button>
       </div>
     </nav>
-  )
+  );
 
   const openMenu = (
-    <div className={`fixed inset-0 bg-surface w-full h-screen p-2 z-50 transition-transform duration-500 ease-out ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+    <div
+      className={`fixed inset-0 bg-surface w-full h-screen p-2 z-50 transition-transform duration-500 ease-out ${
+        isOpen ? "translate-x-0" : "translate-x-full"
+      }`}
+    >
       <div className="flex flex-1 w-full justify-end items-center p-2">
-        <button onClick={() => { setIsOpen(!isOpen) }}>
-          <svg className="stroke-matte fill-matte"width="25px" height="25px" viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg">
-            <path d="M19 5L5 19M5.00001 5L19 19" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+        <button
+          onClick={() => {
+            setIsOpen(!isOpen);
+          }}
+        >
+          <svg
+            className="stroke-matte fill-matte"
+            width="25px"
+            height="25px"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M19 5L5 19M5.00001 5L19 19"
+              strokeWidth="1.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
           </svg>
         </button>
       </div>
@@ -96,14 +145,14 @@ const Header = () => {
         </ul>
       </div>
     </div>
-  )
+  );
 
   return (
     <>
       {mainMenu}
       {openMenu}
     </>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
