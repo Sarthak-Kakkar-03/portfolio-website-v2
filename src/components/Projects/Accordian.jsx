@@ -52,9 +52,9 @@ const Accordion = ({ data }) => {
             })}
           </div>
           <div className="flex justify-around items-center">
-            <a className="border-matte transitional-all border hover:border-highlight hover:-translate-y-1 bg-surface rounded-xl p-2"
+            <a className="border-matte transitional-all border hover:border-highlight hover:-translate-y-1 bg-surface rounded-xl p-2 hover:text-highlight hover:shadow-xl shadow hover:shadow-highlight"
             href={data.source} target="blank">Source</a>
-            <a className="border-matte transitional-all border hover:border-highlight hover:-translate-y-1 bg-surface rounded-xl p-2"
+            <a className="border-matte transitional-all border hover:border-highlight hover:-translate-y-1 bg-surface rounded-xl p-2 hover:text-highlight hover:shadow-xl shadow hover:shadow-highlight"
             href={data.demo} target="blank">Demo</a>
           </div>
           
