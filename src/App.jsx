@@ -11,6 +11,7 @@ import Hero from "./components/Hero/Hero";
 import About from "./components/About/About";
 import Experience from "./components/Experience/Experience";
 import ExperiencePage from "./components/Experience/ExperiencePage";
+import Projects from "./components/Projects/Projects";
 
 function ScrollToHash() {
   const { hash } = useLocation();
@@ -35,6 +36,9 @@ function HomePage() {
       </Section>
       <Section id="experience">
         <Experience />
+      </Section>
+      <Section id="projects">
+        <Projects/>
       </Section>
     </>
   );

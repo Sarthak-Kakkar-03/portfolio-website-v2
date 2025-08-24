@@ -1,0 +1,50 @@
+[
+  {
+    "title": "Portfolio Website",
+    "imageSrc": "projects/website.jpg",
+    "description": "A personal portfolio website, showcasing my skills and experience.",
+    "skills": ["JavaScript", "Node", "React", "HTML", "CSS"],
+    "demo": "https://www.example.com",
+    "source": "https://www.github.com"
+  },
+  {
+    "title": "Random Forest Weather Analysis",
+    "imageSrc": "projects/weather_analysis.png",
+    "description": "Using random forest to classify weather conditions from an API.",
+    "skills": ["Python", "Scikit-learn", "Random Forest"],
+    "demo": "",
+    "source": ""
+  },
+  {
+    "title": "EcoSim: Dynamic Predator-Prey Ecosystem",
+    "imageSrc": "projects/ecosim_cover.jpeg",
+    "description": "A C++ program simulating realistic predator-prey dynamics.",
+    "skills": ["C++", "Linux", "OOP", "NCurses"],
+    "demo": "",
+    "source": ""
+  },
+  {
+    "title": "Battleship Game",
+    "imageSrc": "projects/battleship_cli.png",
+    "description": "A CLI battleship game with a bot to play against or to use against others online.",
+    "skills": ["Java", "Proxy Server Design", "APIs", "Algorithm Design"],
+    "demo": "",
+    "source": "https://github.com/Sarthak-Kakkar-03/battleship-AI"
+  },
+  {
+    "title": "Calendar App",
+    "imageSrc": "projects/calendar.jpg",
+    "description": "A local calendar application with a GUI made using JavaFX.",
+    "skills": ["Java", "JavaFX", "OOP", "JSON Database"],
+    "demo": "",
+    "source": "https://github.com/Sarthak-Kakkar-03/Calendar-app"
+  },
+  {
+    "title": "Snake Game",
+    "imageSrc": "projects/snake.png",
+    "description": "A CLI based snake game made in C++ and deployed on Khoury Linux server.",
+    "skills": ["C++", "Linux", "NCurses", "OOP"],
+    "demo": "",
+    "source": ""
+  }
+]
