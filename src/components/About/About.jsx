@@ -62,7 +62,7 @@ const About = () => {
         >
           <div className="w-48 h-48 md:w-72 md:h-72 overflow-hidden rounded-full mx-auto">
             <img
-              src="/src/assets/about_img_rect.jpg"
+              src="/assets/about_img_rect.jpg"
               alt="Me"
               className="w-full h-full object-cover"
             />

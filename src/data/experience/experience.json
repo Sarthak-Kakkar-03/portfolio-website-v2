@@ -4,7 +4,7 @@
         "companyName": "Movement Neuroscience Lab",
         "companyWebsite": "https://www.researchgate.net/lab/Eugene-Tunik-Lab",
         "position": "Embedded Systems Engineer Co-op",
-        "logoPath": "/src/assets/experience/mnl_logo.png",
+        "logoPath": "/assets/experience/mnl_logo.png",
         "description": "Engineered a research-grade human experimentation system integrating electrical stimulation with real-time Bluetooth force feedback. Developed custom Python APIs, reverse-engineered BLE devices, and implemented microsecond-precise stimulator control. Contributed to a system that achieved IRB approval and was adopted across multiple projects.",
         "duration": "January 2025 - June 2025",
         "responsibilities": [
@@ -46,7 +46,7 @@
                 "name": "Dave Sherman",
                 "linkedIn": "https://www.linkedin.com/in/davidalexsherman/",
                 "content": "I had the privilege of mentoring Sarthak during his Northeastern Co-Op placement last spring, where he served as an embedded systems engineer on our team. His performance was nothing short of exceptional.\n\nSarthak successfully developed a sophisticated integrated research-grade system that combined neuromuscular electrical stimulators with both wired and wireless user input devices, plus Bluetooth-connected force gauges. This complex project required not only deep technical expertise but also the ability to navigate the unique challenges of working in a multidisciplinary environment.\n\nWhat truly set Sarthak apart was his remarkable ability to bridge technical and non-technical worlds. Working alongside medical professionals who didn't share his engineering background, he demonstrated exceptional communication skills, translating complex technical concepts into accessible language while maintaining the precision necessary for our research applications.\n\nThroughout the project, Sarthak consistently delivered timely updates, proactively identified potential issues, and engineered efficient solutions to problems as they arose. His adaptability shone when project scope evolved—he embraced changes seamlessly and actually took the work beyond what I had originally envisioned.\n\nSarthak combines strong technical fundamentals with excellent project management instincts and collaborative skills that make him invaluable on any engineering team. Any organization would be fortunate to have someone with his blend of technical expertise, communication abilities, and professional maturity.\n\nI recommend Sarthak without reservation and look forward to seeing the continued impact he'll make in his engineering career.",
-                "image": "/src/assets/experience/dave_sherman.jpeg", 
+                "image": "/assets/experience/dave_sherman.jpeg", 
                 "relation": "Manager and mentor",
                 "position": "Assistant Professor at Northeastern University"
             }
@@ -59,7 +59,7 @@
         "companyName": "Northeastern University",
         "position":"Teaching Assistant",
         "companyWebsite": "https://www.khoury.northeastern.edu/",
-        "logoPath": "/src/assets/experience/nu_logo.png",
+        "logoPath": "/assets/experience/nu_logo.png",
         "description": "Served as Teaching Assistant for Northeastern’s Programming in C++ course, supporting 100+ students through rubric-based grading, office hour guidance, and technical troubleshooting on the Khoury server environment. Contributed to student success by reinforcing core C++ concepts, resolving development challenges, and maintaining consistent academic standards.",
         "duration": "September 2024 - December 2024",
         "responsibilities": [
@@ -90,7 +90,7 @@
         "companyName": "Wissen Infotech",
         "companyWebsite": "https://www.wissen.com/",
         "position":"LLM Operations Intern",
-        "logoPath": "/src/assets/experience/wissen_logo.png",
+        "logoPath": "/assets/experience/wissen_logo.png",
         "description": "Researched and developed LLM-driven code conversion systems, implementing prototypes for cross-language and cross-framework migration, a LangChain/LangGraph feedback loop inspired by supervisor architecture, and client-facing demos. Contributed to the company’s accelerator initiative by delivering scalable prototypes and presenting solutions to leadership and prospective clients.",
         "duration": "June 2024 - August 2024",
         "responsibilities": [
@@ -124,7 +124,7 @@
                 "name": "Sandeep Thilakan",
                 "linkedIn": "https://www.linkedin.com/in/sandeep-thilakan-30b7a513b/",
                 "content": "I had the opportunity to mentor Sarthak during his internship at Wissen Infotech. Sarthak is very hands-on and was quick to learn AI tools and frameworks. He demonstrated good problem-solving abilities and, within 2 months, developed an accelerator solution that met our needs. He also communicated effectively during client presentations and showed initiative in mentoring team members. Sarthak's dedication and proactive approach make him a valuable team contributor.",
-                "image": "/src/assets/experience/sandeep_thilakan.jpeg",
+                "image": "/assets/experience/sandeep_thilakan.jpeg",
                 "relation": "Mentor",
                 "position": "Vice President-AI"
             },
@@ -132,7 +132,7 @@
                 "name": "John Loney",
                 "linkedIn": "https://www.linkedin.com/in/sandeep-thilakan-30b7a513b/",
                 "content": "I had the opportunity of working with Sarthak when he interned under me at Wissen AI. He did a wonderful job working on a solution using Python, AI & LLMs. He built an MVP in just 2 months. He showed initiative, ownership and excellent collaboration skills during that time. With his affable personality and hard working nature he would be an asset to any team he is part of. Would be a pleasure to work with him in the future. All the best Sarthak.",
-                "image": "/src/assets/experience/john_loney.jpeg",
+                "image": "/assets/experience/john_loney.jpeg",
                 "relation": "Manager",
                 "position": "Senior Leader - AI and Automation"
             }
@@ -144,7 +144,7 @@
         "companyName": "Applify",
         "position":"Software Engineer Intern",
         "companyWebsite": "https://www.applify.co/",
-        "logoPath": "/src/assets/experience/applify_logo.png",
+        "logoPath": "/assets/experience/applify_logo.png",
         "description": "Worked as a backend development intern at an app development company, contributing to a production application by assisting with RESTful API design, debugging, and unit testing with JaCoCo. Gained hands-on experience with PostgreSQL and JDBC for database access, wrote SQL queries within Java, and collaborated with senior developers using Git and JIRA in an agile team environment.",
         "duration": "June 2023 - August 2023",
         "responsibilities": [
