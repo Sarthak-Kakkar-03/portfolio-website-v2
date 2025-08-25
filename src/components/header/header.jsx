@@ -27,7 +27,11 @@ const Header = () => {
       <a
         href={`#${id}`}
         onClick={handleNavClick(id)}
-        className={`font-medium md:font-light md:text-lg text-matte hover:text-highlight hover:cursor-pointer`}
+        className={`font-medium md:font-light md:text-lg ${
+          label === "Contact"
+            ? "text-highlight"
+            : "text-matte hover:text-highlight"
+        } hover:cursor-pointer`}
       >
         {label}
       </a>
