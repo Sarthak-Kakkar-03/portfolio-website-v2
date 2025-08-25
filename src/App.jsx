@@ -52,7 +52,7 @@ function HomePage() {
 
 const router = createBrowserRouter([
   { path: "/", element: <HomePage /> },
-  { path: "/experience/:id", element: <><Header/><ExperiencePage /></> },
+  { path: "/experience/:id", element: <><ExperiencePage /></> },
 ]);
 
 export default function App() {
