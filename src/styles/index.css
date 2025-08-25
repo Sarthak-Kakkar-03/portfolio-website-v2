@@ -6,7 +6,7 @@
 
 /* LIGHT values you gave */
 :root {
-  --highlight: #003366;   /* brand blue */
+  --highlight: #191970;   /* brand blue */
   --matte:   #191f22;   /* near-black */
   --surface:#f4f4f6;  /* subtle gray */
   --card: #e6e6e9ef;
