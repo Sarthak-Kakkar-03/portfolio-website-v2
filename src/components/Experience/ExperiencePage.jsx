@@ -47,14 +47,14 @@ const ExperiencePage = () => {
           <div>{exp.description}</div>
         </PageSection>
         <PageSection title={"Responsibilities"}>
-          <ul className="list-disc list-inside">
+          <ul className="list-disc list-outside pl-6">
             {exp.responsibilities.map((responsibility, idx) => {
               return <li key={`resp-${idx}`}>{responsibility}</li>;
             })}
           </ul>
         </PageSection>
         <PageSection title={"Key Achievements"}>
-          <ul className="list-disc list-inside">
+          <ul className="list-disc list-outside pl-6">
             {exp.achievements.map((achievement, idx) => {
               return <li key={`ach-${idx}`}>{achievement}</li>;
             })}

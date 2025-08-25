@@ -8,9 +8,10 @@
         "description": "Built an integrated stimulator–sensor–control system and modular async API, adding patient-feedback visualization to improve outcomes.",
         "duration": "January 2025 - June 2025",
         "responsibilities": [
-            "blah",
-            "blah2",
-            "blah3"
+            "Engineered a human research system combining electrical stimulation with real-time force data collection over Bluetooth.",
+            "Designed research workflows that prioritize participant comfort while ensuring rigorous data integrity for medical studies.",
+            "Translated medical concepts from interdisciplinary collaborators into technical system designs, creating a platform capable of delivering varied electrical stimulation configurations with real-time control and feedback.",
+            "Collaborated with researchers to ensure the system complied with established safety protocols and research standards."
         ],
         "achievements": [
             "blah",
