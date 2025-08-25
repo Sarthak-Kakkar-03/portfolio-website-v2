@@ -84,7 +84,7 @@ const Header = () => {
         <Link to={"/"} className="h-max-full flex justify-center">
           <img
             className="h-full max-h-[40px]"
-            src="/src/assets/sk_icon.png"
+            src="/assets/sk_icon.png"
             alt=""
           />
         </Link>
