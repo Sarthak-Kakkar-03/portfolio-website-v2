@@ -1,9 +1,13 @@
-import React from "react";
+import React, { use } from "react";
 import { useParams } from "react-router-dom";
 import data from "/src/data/experience/experience.json";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 const ExperiencePage = () => {
+  useEffect(() => {
+  window.scrollTo(0, 0);
+}, []);
   const { id } = useParams();
   const exp = data.find((x) => x.id === id);
 
@@ -78,7 +82,7 @@ const ExperiencePage = () => {
                 key={`rec-${idx}`}
                 className="flex flex-col md:flex-row gap-5 md:items-start mb-8"
               >
-                <div className="md:w-1/3 md:flex-shrink-0 flex flex-col  gap-2 items-center group">
+                <div className="md:w-1/3 md:flex-shrink-0 flex flex-col  gap-2 items-center group text-center">
                   {rec.image ? (
                     <img
                       src={rec.image}
@@ -89,6 +93,7 @@ const ExperiencePage = () => {
                     <div className="w-24 h-24 md:w-28 md:h-28 rounded-xl bg-surface" />
                   )}
                   <h2 className="text-lg font-semibold">{rec.name}</h2>
+                  <h2 className="text-lg">{rec.position}</h2>
                   <h2 className="text-lg">{rec.relation}</h2>
                   <a
               href={rec.linkedIn}

@@ -45,7 +45,7 @@ const Header = () => {
 
   const mainMenu = (
     <nav
-      className="relative z-40 bg-card md:sticky top-0 w-full flex justify-between md:p-5 p-2 text-sm shadow-sm box-border"
+      className="relative z-40 bg-card sticky top-0 w-full flex justify-between md:p-5 p-2 text-sm shadow-sm box-border"
       style={{ height: "4rem" }}
     >
       <Link to={"/"} className="h-max-full flex justify-center">
