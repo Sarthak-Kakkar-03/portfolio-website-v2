@@ -35,14 +35,20 @@ const Accordion = ({ data }) => {
       {/* answer panel */}
       <div
         className={`overflow-hidden transition-[max-height,opacity] duration-500 ease-in-out
-          ${open ? "max-h-screen opacity-100" : "max-h-0 opacity-0"}`}
+          ${open ? "opacity-100" : "max-h-0 opacity-0"}`}
       >
-        <div className="p-2 md:p-5 grid grid-cols-2 gap-8">
-          <p>{data.description}</p>
-          <div className="flex justify-center items-center">
+        <div className="p-2 md:p-5 grid grid-cols-1 md:grid-cols-2 gap-8">
+          <ul className="flex flex-col gap-2 list-disc list-outside pl-6 order-3 md:order-1">
+            {data.details.map((detail, idx) => {
+              return (<li key={`detail_${idx}`} className="">
+                {detail}
+              </li>)
+            })}
+          </ul>
+          <div className="flex justify-center items-center order-1 md:order-2">
             <img src={data.imageSrc} alt="" className="max-h-[150px] md:max-h-[300px]" />
           </div>
-          <div className="flex flex-wrap gap-2">
+          <div className="md:flex hidden flex-wrap gap-2 order-4 md:order-3">
             {data.skills.map((skill, idx) => {
               return (
                 <div className="flex p-2 rounded-xl bg-surface" key={idx}>
@@ -51,11 +57,13 @@ const Accordion = ({ data }) => {
               );
             })}
           </div>
-          <div className="flex justify-around items-center">
-            <a className="border-matte transitional-all border hover:border-highlight hover:-translate-y-1 bg-surface rounded-xl p-2 hover:text-highlight hover:shadow-xl shadow hover:shadow-highlight"
+          <div className="flex justify-around items-center order-2 md:order-4">
+            <a className={`border-matte transitional-all border hover:border-highlight hover:-translate-y-1 bg-surface rounded-xl p-2 hover:text-highlight hover:shadow-xl shadow hover:shadow-highlight ${data.source === "" ? "hidden" : "block"}`}
             href={data.source} target="blank">Source</a>
             <a className={`border-matte transitional-all border hover:border-highlight hover:-translate-y-1 bg-surface rounded-xl p-2 hover:text-highlight hover:shadow-xl shadow hover:shadow-highlight ${data.demo === "" ? "hidden" : "block"}`}
             href={data.demo} target="blank">Demo</a>
+            <a className={`border-matte transitional-all border hover:border-highlight hover:-translate-y-1 bg-surface rounded-xl p-2 hover:text-highlight hover:shadow-xl shadow hover:shadow-highlight ${data.paper === "" ? "hidden" : "block"}`}
+            href={data.demo} target="blank">Paper</a>
           </div>
           
         </div>
