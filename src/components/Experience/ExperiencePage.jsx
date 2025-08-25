@@ -47,20 +47,20 @@ const ExperiencePage = () => {
           <div>{exp.description}</div>
         </PageSection>
         <PageSection title={"Responsibilities"}>
-          <ul className="list-disc list-outside pl-6">
+          <ul className="list-disc list-outside pl-6 gap-2 flex flex-col">
             {exp.responsibilities.map((responsibility, idx) => {
               return <li key={`resp-${idx}`}>{responsibility}</li>;
             })}
           </ul>
         </PageSection>
         <PageSection title={"Key Achievements"}>
-          <ul className="list-disc list-outside pl-6">
+          <ul className="list-disc list-outside pl-6 flex flex-col gap-2">
             {exp.achievements.map((achievement, idx) => {
               return <li key={`ach-${idx}`}>{achievement}</li>;
             })}
           </ul>
         </PageSection>
-        <PageSection title={"Technologies Used"}>
+        <PageSection title={"Technologies and Skills"}>
           <div className="flex flex-wrap gap-3">
             {exp.technologies.map((tech, idx) => {
               //console.log(tech);
