@@ -4,7 +4,7 @@ const Accordion = ({ data }) => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="border border-matte transition-all hover:-translate-y-2 rounded bg-card text-matte">
+    <div className="border border-matte transition-all md:hover:-translate-y-2 rounded bg-card text-matte">
       {/* button row */}
       <button
         onClick={() => setOpen((v) => !v)}
