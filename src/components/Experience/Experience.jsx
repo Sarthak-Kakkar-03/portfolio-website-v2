@@ -55,6 +55,10 @@ const Experience = () => {
                         <div className="hidden md:flex text-matte group-hover:text-highlight text-left">
                             {exp.description}
                         </div>
+                        <div className="flex w-full justify-end">
+                          <div className="hidden md:block group-hover:text-highlight">&#8600;</div>
+                          <div className="text-highlight text-sm block md:hidden">Learn More</div>
+                        </div>
                     </div>
               </Link>
             </div>
