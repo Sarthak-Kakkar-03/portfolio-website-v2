@@ -193,7 +193,7 @@ const About = () => {
               </g>
             </svg>
           </div>
-          <h2 className="font-bold text-xl">AI/ML</h2>
+          <h2 className="font-bold text-xl text-center">AI/ML</h2>
           <p className="text-center">
             Proficient in applying modern ML techniques to solve real-world
             problems, with experience training and fine-tuning models for
@@ -232,7 +232,7 @@ const About = () => {
               <rect width="32" height="32" fill="none" />
             </svg>
           </div>
-          <h2 className="font-bold text-xl">Backend Development</h2>
+          <h2 className="font-bold text-xl text-center">Backend Development</h2>
           <p className="text-center">
             Experienced in designing and implementing scalable backend systems
             using <b className="group-hover:text-highlight">Python, Java,</b>{" "}
@@ -266,7 +266,7 @@ const About = () => {
               <path d="M0 6H3V8H0V6Z" />
             </svg>
           </div>
-          <h2 className="font-bold text-xl">Frontend Development</h2>
+          <h2 className="font-bold text-xl text-center">Frontend Development</h2>
           <p className="text-center">
             Skilled in creating responsive, accessible, and visually engaging
             user interfaces with{" "}
@@ -315,7 +315,7 @@ const About = () => {
               />
             </svg>
           </div>
-          <h2 className="font-bold text-xl whitespace-nowrap text-[clamp(0.9rem,2vw,1.25rem)]">
+          <h2 className="font-bold text-xl text-center text-[clamp(0.9rem,2vw,1.25rem)]">
             Embedded Software Development
           </h2>
           <p className="text-center">
