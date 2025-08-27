@@ -58,7 +58,7 @@ const router = createBrowserRouter([
 export default function App() {
   return (
     <div className="min-h-screen bg-surface">
-      <main className="flex-1 overscroll-contain focus:outline-none md:snap-y md:snap-proximity md:scroll-pt-16">
+      <main className="flex-1 overscroll-contain focus:outline-none lg:snap-y lg:snap-proximity lg:scroll-pt-16">
         <RouterProvider router={router} />
       </main>
     </div>

@@ -5,13 +5,13 @@ import { Link } from "react-router-dom";
 const Experience = () => {
   //console.log(experienceData);
   return (
-    <div className="flex flex-col justify-start gap-3 items-stretch px-5 md:px-[100px] text-matte">
+    <div className="flex flex-col justify-start gap-3 items-stretch px-5 lg:px-[100px] text-matte">
       <h1 className="font-extrabold text-4xl text-matte">My Experience</h1>
       <div className="grid grid-cols-1 gap-5">
         {experienceData.map((exp) => {
           return (
             <div key={exp.id} className="flex group">
-              <div className="hidden md:block bg-none group-hover:text-highlight">
+              <div className="hidden lg:block bg-none group-hover:text-highlight">
                 <svg
                   className="min-h-full stroke-current fill-current aspect-[1/2]"
                   viewBox="0 0 24 24"
@@ -42,22 +42,22 @@ const Experience = () => {
               transition-all shadow group-hover:shadow-xl group-hover:-translate-y-2 group-hover:scale-[1.02]
               group-hover:border border-highlight p-2 duration-300"
               >
-                    <div className="flex justify-center items-center aspect-square p-2 md:p-5">
-                    <div className="rounded-xl aspect-square flex justify-center items-center bg-surface p-1.5 max-h-[75px] md:max-h-[150px]">
+                    <div className="flex justify-center items-center aspect-square p-2 lg:p-5">
+                    <div className="rounded-xl aspect-square flex justify-center items-center bg-surface p-1.5 max-h-[75px] lg:max-h-[150px]">
                         <img src={exp.logoPath} alt="${}" />
                     </div>
                     </div>
-                    <div className="flex flex-col w-full p-2 md:p-5 justify-around">
-                        <div className="flex text-lg md:text-xl flex-wrap text-center md:text-left break-words md:justify-between">
+                    <div className="flex flex-col w-full p-2 lg:p-5 justify-around">
+                        <div className="flex text-lg lg:text-xl flex-wrap text-center lg:text-left break-words lg:justify-between">
                             <div className="font-bold">{`${exp.companyName} @ ${exp.position}`}</div>
-                            <div className="hidden md:block font-thin text-highlight text-base">{exp.duration}</div>
+                            <div className="hidden lg:block font-thin text-highlight text-base">{exp.duration}</div>
                         </div>
-                        <div className="hidden md:flex text-matte group-hover:text-highlight text-left">
+                        <div className="hidden lg:flex text-matte group-hover:text-highlight text-left">
                             {exp.description}
                         </div>
                         <div className="flex w-full justify-end">
-                          <div className="hidden md:block group-hover:text-highlight">&#8600;</div>
-                          <div className="text-highlight text-sm block md:hidden">Learn More</div>
+                          <div className="hidden lg:block group-hover:text-highlight">&#8600;</div>
+                          <div className="text-highlight text-sm block lg:hidden">Learn More</div>
                         </div>
                     </div>
               </Link>

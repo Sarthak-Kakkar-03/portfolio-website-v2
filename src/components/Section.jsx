@@ -5,7 +5,7 @@ export default function Section({ id, className = '', children }) {
     <section
       id={id}
       data-fullpage
-      className={`bg-surface min-h-[calc(100dvh-4rem)] px-2 py-4 md:px-10 md:py-12 ${className}`}
+      className={`bg-surface min-h-[calc(100dvh-4rem)] px-2 py-4 lg:px-10 lg:py-12 ${className}`}
     >
       {children}
     </section>

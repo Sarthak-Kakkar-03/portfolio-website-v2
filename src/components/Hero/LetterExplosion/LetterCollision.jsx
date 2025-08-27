@@ -104,7 +104,7 @@ export default function LetterCollision() {
           </div>
         </div>
         </div>
-        <div className="hidden md:flex flex-col items-end w-full justify-end
+        <div className="hidden lg:flex flex-col items-end w-full justify-end
         animate-bounce
         ">
           <div className="flex flex-col items-center text-center p-1">

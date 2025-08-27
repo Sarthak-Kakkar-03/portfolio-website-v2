@@ -17,7 +17,7 @@ const ExperiencePage = () => {
 
   return (
     <div className="text-matte p-5 flex justify-center items-start">
-      <div className="flex flex-col p-2 md:p-5 bg-card rounded-xl shadow gap-3 max-w-[900px]">
+      <div className="flex flex-col p-2 lg:p-5 bg-card rounded-xl shadow gap-3 max-w-[900px]">
         <div className=" hover:text-highlight mb-5">
           <Link to={"/#experience"}>&larr; Back to Experience</Link>
         </div>
@@ -25,16 +25,16 @@ const ExperiencePage = () => {
           <a href={exp.companyWebsite} target="_blank">
             <div
               className="rounded-xl aspect-square flex justify-center items-center
-            bg-surface p-1.5 max-h-[75px] md:max-h-[150px] 
+            bg-surface p-1.5 max-h-[75px] lg:max-h-[150px] 
             transition-all hover:-translate-y-1 hover:scale-[1.02]"
             >
               <img src={exp.logoPath} alt="Company Logo"></img>
             </div>
           </a>
           <div className="flex flex-col">
-            <h1 className="text-xl md:text-4xl font-bold">{exp.position}</h1>
+            <h1 className="text-xl lg:text-4xl font-bold">{exp.position}</h1>
             <a
-              className="text-lg md:text-3xl hover:text-highlight"
+              className="text-lg lg:text-3xl hover:text-highlight"
               href={exp.companyWebsite}
               target="_blank"
             >
@@ -80,17 +80,17 @@ const ExperiencePage = () => {
             {exp.recommendations.map((rec, idx) => (
               <div
                 key={`rec-${idx}`}
-                className="flex flex-col md:flex-row gap-5 md:items-start mb-8"
+                className="flex flex-col lg:flex-row gap-5 lg:items-start mb-8"
               >
-                <div className="md:w-1/3 md:flex-shrink-0 flex flex-col  gap-2 items-center group text-center">
+                <div className="lg:w-1/3 lg:flex-shrink-0 flex flex-col  gap-2 items-center group text-center">
                   {rec.image ? (
                     <img
                       src={rec.image}
                       alt={rec.name}
-                      className="w-24 h-24 md:w-28 md:h-28 rounded-xl object-cover bg-surface transition-all hover:-translate-y-1 hover:scale-[1.05]"
+                      className="w-24 h-24 lg:w-28 lg:h-28 rounded-xl object-cover bg-surface transition-all hover:-translate-y-1 hover:scale-[1.05]"
                     />
                   ) : (
-                    <div className="w-24 h-24 md:w-28 md:h-28 rounded-xl bg-surface" />
+                    <div className="w-24 h-24 lg:w-28 lg:h-28 rounded-xl bg-surface" />
                   )}
                   <h2 className="text-lg font-semibold">{rec.name}</h2>
                   <h2 className="text-lg">{rec.position}</h2>
@@ -130,7 +130,7 @@ const ExperiencePage = () => {
                 </div>
 
                 {/* Right column */}
-                <div className="md:w-2/3 md:min-w-0 leading-relaxed bg-surface p-2 rounded md:text-left text-center">
+                <div className="lg:w-2/3 lg:min-w-0 leading-relaxed bg-surface p-2 rounded lg:text-left text-center">
                   {rec.content}
                 </div>
               </div>
@@ -145,7 +145,7 @@ const ExperiencePage = () => {
 const PageSection = ({ title, children }) => {
   return (
     <div className="flex flex-col gap-2">
-      <div className="border-b-2 border-matte p-2 font-bold md:text-lg">
+      <div className="border-b-2 border-matte p-2 font-bold lg:text-lg">
         {title}
       </div>
       {children}

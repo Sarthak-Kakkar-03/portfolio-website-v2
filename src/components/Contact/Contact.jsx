@@ -42,7 +42,7 @@ const Contact = () => {
 
   return (
     <div className="text-matte flex flex-1 justify-center items-center">
-      <form onSubmit={onSubmit} className="bg-card rounded-xl p-3 md:p-5 flex flex-col gap-5 md:min-w-[50vw]">
+      <form onSubmit={onSubmit} className="bg-card rounded-xl p-3 lg:p-5 flex flex-col gap-5 lg:min-w-[50vw]">
         <div className="flex flex-1 justify-center">
           <h1 className="text-4xl font-bold">Send me a message</h1>
         </div>

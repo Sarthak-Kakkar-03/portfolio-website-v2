@@ -4,7 +4,7 @@ import data from '/src/data/projects/projects.json'
 
 const Projects = () => {
   return (
-    <div className='flex flex-col justify-start gap-3 items-stretch px-5 md:px-[100px] text-matte'>
+    <div className='flex flex-col justify-start gap-3 items-stretch px-5 lg:px-[100px] text-matte'>
       <h1 className="font-extrabold text-4xl text-matte">My Projects</h1>
       {
         data.map((project, idx) => {

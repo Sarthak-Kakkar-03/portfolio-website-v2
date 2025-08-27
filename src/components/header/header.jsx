@@ -27,7 +27,7 @@ const Header = () => {
       <a
         href={`#${id}`}
         onClick={handleNavClick(id)}
-        className={`font-medium md:font-light md:text-lg ${
+        className={`font-medium lg:font-light lg:text-lg ${
           label === "Contact"
             ? "text-highlight"
             : "text-matte hover:text-highlight"
@@ -45,22 +45,22 @@ const Header = () => {
 
   const mainMenu = (
     <nav
-      className="z-40 bg-card sticky top-0 w-full flex justify-between md:p-5 p-2 text-sm shadow-sm box-border"
+      className="z-40 bg-card sticky top-0 w-full flex justify-between lg:p-5 p-2 text-sm shadow-sm box-border"
       style={{ height: "4rem" }}
     >
       <Link to={"/"} className="h-max-full flex justify-center">
         <img
-          className="h-max-full hidden md:block max-h-[40px]"
+          className="h-max-full hidden lg:block max-h-[40px]"
           src="/assets/sk_icon.png"
           alt="SK logo"
         />
       </Link>
 
-      <div className="hidden md:flex flex-1 md:max-w-3xl justify-center items-center">
+      <div className="hidden lg:flex flex-1 lg:max-w-3xl justify-center items-center">
         <ul className="flex flex-1 justify-between">{links}</ul>
       </div>
 
-      <button className="hidden md:block" onClick={toggleTheme}>
+      <button className="hidden lg:block" onClick={toggleTheme}>
         <svg
           className="h-full fill-current text-black dark:text-highlight"
           viewBox="0 0 48 48"
@@ -80,7 +80,7 @@ const Header = () => {
           </g>
         </svg>
       </button>
-      <div className="flex md:hidden flex-1 items-center justify-between p-1">
+      <div className="flex lg:hidden flex-1 items-center justify-between p-1">
         <Link to={"/"} className="h-max-full flex justify-center">
           <img
             className="h-full max-h-[40px]"
