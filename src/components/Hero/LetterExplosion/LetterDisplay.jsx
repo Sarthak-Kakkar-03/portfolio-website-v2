@@ -3,20 +3,20 @@ function getRandomSpeed() {
   return 0.8 + Math.random() * 0.7;
 }
 
-function LetterDisplay({word}) {
+function LetterDisplay({ word }) {
   return (
-    <>
-      {word.split('').map((char, i) => (
-        <div
+    <span className="word inline-flex whitespace-nowrap">
+      {word.split("").map((char, i) => (
+        <span
           key={i}
-          className="letter text-6xl font-semibold xs:text-[90px] md:text-[120px]"
-          data-speed={getRandomSpeed()}
+          className="letter inline-block font-semibold text-[clamp(48px,12vw,150px)]"
         >
           {char}
-        </div>
+        </span>
       ))}
-    </>
+    </span>
   );
 }
+
 
 export default LetterDisplay;

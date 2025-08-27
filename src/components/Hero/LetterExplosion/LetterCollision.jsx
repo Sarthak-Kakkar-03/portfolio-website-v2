@@ -85,19 +85,24 @@ export default function LetterCollision() {
         }}
       >
         <div className="mb-8">
-          <div className="flex flex-wrap">
+          <div className="space-y-2">
+          {/* line 1 */}
+          <div className="flex flex-wrap gap-x-4 sm:gap-x-10">
             <LetterDisplay word={lines[0]} />
-            <div className="w-4 sm:w-10" />
             <LetterDisplay word={lines[1]} />
           </div>
-          <div className="flex flex-wrap mt-2">
+
+          {/* line 2 */}
+          <div className="flex flex-wrap gap-x-4 sm:gap-x-10">
             <LetterDisplay word={lines[2]} />
-            <div className="w-4 sm:w-10" />
             <LetterDisplay word={lines[3]} />
           </div>
+
+          {/* line 3 */}
+          <div className="flex flex-wrap gap-x-4 sm:gap-x-10">
+            <LetterDisplay word={lines[4]} />
+          </div>
         </div>
-        <div className="flex flex-wrap">
-          <LetterDisplay word={lines[4]} />
         </div>
         <div className="hidden md:flex flex-col items-end w-full justify-end
         animate-bounce
