@@ -130,7 +130,7 @@ const ExperiencePage = () => {
                 </div>
 
                 {/* Right column */}
-                <div className="md:w-2/3 md:min-w-0 leading-relaxed bg-surface p-2 rounded text-center">
+                <div className="md:w-2/3 md:min-w-0 leading-relaxed bg-surface p-2 rounded md:text-left text-center">
                   {rec.content}
                 </div>
               </div>
