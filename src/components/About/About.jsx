@@ -3,7 +3,7 @@ import paragraphs from "/src/data/about.json";
 
 const About = () => {
   return (
-    <div className="text-matte flex flex-col gap-4 max-w-none md:max-w-[75%] lg:max-w-none mx-auto px-4 lg:px-6">
+    <div className="text-matte flex flex-col gap-4 max-w-[450px] lg:max-w-none mx-auto px-4 lg:px-6">
       <div className=" flex flex-col-reverse lg:grid grid-cols-[75%_25%] p-2 gap-2 lg:gap-6">
         <div
           className="flex flex-col justify-center items-center 
@@ -60,7 +60,7 @@ const About = () => {
         transform-gpu hover:scale-[1.02] hover:translate-y-1 hover:shadow-lg
         group"
         >
-          <div className="w-48 h-48 lg:w-72 lg:h-72 overflow-hidden rounded-full mx-auto">
+          <div className="max-w-48 h-48 w-full lg:max-w-72 lg:h-72 overflow-hidden rounded-full lg:rounded-xl mx-auto transition lg:hover:translate-y-1 lg:hover:scale-[1.02]">
             <img
               src="/assets/about_img1.png"
               alt="Me"
@@ -159,12 +159,12 @@ const About = () => {
         </div>
       </div>
 
-      <div className="w-full grid grid-cols-1 gap-8 lg:grid-cols-4 p-5">
+      <div className="w-full grid grid-cols-1 gap-8 lg:grid-cols-4 p-5 items-stretch">
         <div
           className="flex flex-col gap-3 bg-card items-center p-3 lg:px-10 rounded group shadow lg:pt-10
              transition-transform duration-300 ease-out
              hover:rotate-x-3 hover:rotate-y-3 hover:scale-105
-             lg:aspect-[3/4]
+             h-full
         "
         >
           <div
@@ -208,7 +208,7 @@ const About = () => {
           className="flex flex-col gap-3 bg-card items-center p-3 lg:px-10 rounded group shadow lg:pt-10
              transition-transform duration-300 ease-out
              hover:rotate-x-3 hover:rotate-y-3 hover:scale-105
-             lg:aspect-[3/4]
+             h-full
         "
         >
           <div
@@ -246,7 +246,7 @@ const About = () => {
           className="flex flex-col gap-3 bg-card items-center p-3 lg:px-10 rounded group shadow lg:pt-10
              transition-transform duration-300 ease-out
              hover:rotate-x-3 hover:rotate-y-3 hover:scale-105
-             lg:aspect-[3/4]
+             h-full
         "
         >
           <div
@@ -282,7 +282,7 @@ const About = () => {
           className="flex flex-col gap-3 bg-card items-center p-3 lg:px-10 rounded group shadow lg:pt-10
              transition-transform duration-300 ease-out
              hover:rotate-x-3 hover:rotate-y-3 hover:scale-105
-             lg:aspect-[3/4]
+             h-full
         "
         >
           <div
