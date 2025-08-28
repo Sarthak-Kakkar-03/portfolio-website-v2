@@ -11,9 +11,9 @@ const Experience = () => {
         {experienceData.map((exp) => {
           return (
             <div key={exp.id} className="flex group">
-              <div className="hidden lg:block bg-none group-hover:text-highlight">
+              <div className="hidden lg:flex flex-col bg-none group-hover:text-highlight align-center justify-center flex-1 max-w-[100px]">
                 <svg
-                  className="min-h-full stroke-current fill-current aspect-[1/2]"
+                  className="max-h-[100px] stroke-current fill-current aspect"
                   viewBox="0 0 24 24"
                   xmlns="http://www.w3.org/2000/svg"
                 >
@@ -40,7 +40,7 @@ const Experience = () => {
               <Link to={`/experience/${exp.id}`}
                 className="flex flex-1 bg-card rounded-xl group-hover:cursor-pointer 
               transition-all shadow group-hover:shadow-xl group-hover:-translate-y-2 group-hover:scale-[1.02]
-              group-hover:border border-highlight p-2 duration-300"
+              group-hover:border border-highlight p-2 duration-300 overflow-hidden"
               >
                     <div className="flex justify-center items-center aspect-square p-2 lg:p-5">
                     <div className="rounded-xl aspect-square flex justify-center items-center bg-surface p-1.5 max-h-[75px] lg:max-h-[150px]">
