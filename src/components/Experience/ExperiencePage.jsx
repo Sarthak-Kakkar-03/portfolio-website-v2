@@ -80,7 +80,7 @@ const ExperiencePage = () => {
             {exp.recommendations.map((rec, idx) => (
               <div
                 key={`rec-${idx}`}
-                className="flex flex-col lg:flex-row gap-5 lg:items-start mb-8"
+                className="flex flex-col lg:flex-row gap-5 lg:items-start  items-center"
               >
                 <div className="lg:w-1/3 lg:flex-shrink-0 flex flex-col  gap-2 items-center group text-center">
                   {rec.image ? (
@@ -130,7 +130,7 @@ const ExperiencePage = () => {
                 </div>
 
                 {/* Right column */}
-                <div className="lg:w-2/3 lg:min-w-0 leading-relaxed bg-surface p-2 rounded lg:text-left text-center">
+                <div className="lg:w-2/3 lg:min-w-0 leading-relaxed bg-surface p-2 rounded lg:text-left text-center max-w-[400px] lg:max-w-none">
                   {rec.content}
                 </div>
               </div>
