@@ -63,7 +63,7 @@ const Accordion = ({ data }) => {
             <a className={`border-matte transitional-all border hover:border-highlight hover:-translate-y-1 bg-surface rounded-xl p-2 hover:text-highlight hover:shadow-xl shadow hover:shadow-highlight ${data.demo === "" ? "hidden" : "block"}`}
             href={data.demo} target="blank">Demo</a>
             <a className={`border-matte transitional-all border hover:border-highlight hover:-translate-y-1 bg-surface rounded-xl p-2 hover:text-highlight hover:shadow-xl shadow hover:shadow-highlight ${data.paper === "" ? "hidden" : "block"}`}
-            href={data.demo} target="blank">Paper</a>
+            href={data.paper} target="blank">Paper</a>
           </div>
           
         </div>
