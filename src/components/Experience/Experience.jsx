@@ -56,7 +56,7 @@ const Experience = () => {
                             {exp.description}
                         </div>
                         <div className="flex w-full justify-end">
-                          <div className="hidden lg:block group-hover:text-highlight">&#8600;</div>
+                          <div className="hidden text-highlight transition lg:block text-sm font-bold hover:scale-[1.05]">Learn More</div>
                           <div className="text-highlight text-sm block lg:hidden">Learn More</div>
                         </div>
                     </div>
