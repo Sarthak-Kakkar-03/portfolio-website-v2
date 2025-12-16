@@ -1,29 +1,31 @@
 [
   {
-    "title": "PawtoGrader (Ongoing)",
+    "title": "PawtoGrader",
     "imageSrc": "/assets/projects/pawtograder.png",
     "details": [
-      "Participating in an exclusive Northeastern practicum course with a 6-person Agile team, extending PawtoGrader for use by 3,000+ Khoury College CS students.",
-      "Acting as client liaison with Dr. Jonathan Bell, coordinating requirements and ensuring project goals align with both faculty and platform needs.",
-      "Contributing as a full-stack developer using TypeScript, Supabase, and SurveyJS to add survey features, role-based access, and template reuse.",
-      "Developing instructor/TA dashboards for viewing survey results and analytics, and implementing automated group formation for classroom use.",
-      "Supporting Agile delivery with end-to-end testing and documentation to ensure stable releases and clear user guidance."
+      "Led an exclusive Northeastern practicum project as Technical Lead and Client Liaison, delivering major platform extensions for PawtoGrader—an open-source educational system supporting 3,000+ Khoury College CS students.",
+      "Owned technical architecture and feature planning while serving as the primary point of contact with Dr. Jonathan Bell, translating faculty needs into scalable, production-ready solutions.",
+      "Designed and implemented a production-grade full-stack system using TypeScript and a Supabase backend, including secure role-based access control, survey template reuse, and data integrity safeguards.",
+      "Built SurveyJS-powered surveys and Poll-Everywhere–style live polling with real-time classroom interaction, automated group formation, and instructor-controlled workflows.",
+      "Delivered robust instructor and TA analytics dashboards, supported by Playwright end-to-end testing and Sentry error monitoring to ensure reliability, observability, and smooth releases at scale."
     ],
     "skills": [
+      "Technical Leadership",
+      "Client Liaison",
+      "System Architecture",
       "TypeScript",
-      "Supabase",
+      "Supabase (Backend & Auth)",
       "SurveyJS",
+      "Playwright (E2E Testing)",
+      "Sentry (Error Monitoring)",
       "Full-Stack Development",
       "Agile Methodology",
-      "Client Liaison",
-      "End-to-End Testing",
-      "Dashboard Development"
+      "Open-Source Software"
     ],
     "demo": "https://pawtograder.com",
     "source": "https://github.com/pawtograder/platform",
     "paper": ""
   },
-
   {
     "title": "AI Powered Communication Assistant",
     "imageSrc": "/assets/projects/ai_com.jpg",
@@ -128,6 +130,29 @@
     "source": "https://github.com/Sarthak-Kakkar-03/Typographic-Latent-Space",
     "paper": "https://openreview.net/forum?id=ufA2FuCGyz"
   },
+  {
+    "title": "Mixed-Typed Language Design",
+    "imageSrc": "/assets/projects/pl.png",
+    "details": [
+      "Completed an advanced programming languages course focused on the design and implementation of a mixed-typed functional language.",
+      "Designed and extended a small language with both statically and dynamically typed components, emphasizing soundness and expressiveness.",
+      "Implemented core language features including type checking, interpretation, and evaluation semantics using a principled, formal approach.",
+      "Applied concepts from type theory such as type judgments, typing rules, substitution, and operational semantics.",
+      "Developed and tested language features through iterative assignments, emphasizing correctness, edge cases, and rigorous reasoning."
+    ],
+    "skills": [
+      "Programming Language Design",
+      "Type Systems",
+      "Static and Dynamic Typing",
+      "Operational Semantics",
+      "Interpreter Implementation",
+      "Functional Programming",
+      "Formal Reasoning"
+    ],
+    "demo": "",
+    "source": "https://github.com/Sarthak-Kakkar-03/Mixed-Typed-Language-Design",
+    "paper": ""
+  },
 
   {
     "title": "EcoSim: Dynamic Predator-Prey Ecosystem",
@@ -148,27 +173,6 @@
     ],
     "demo": "",
     "source": "",
-    "paper": ""
-  },
-
-  {
-    "title": "Battleship Game",
-    "imageSrc": "/assets/projects/battleship_cli.png",
-    "details": [
-      "Developed a Battleship game in Java featuring a smart algorithm opponent for player-versus-computer gameplay in manual mode.",
-      "Implemented an automated mode that enables algorithm-versus-algorithm battles for testing and competitive play.",
-      "Structured the application using JSON for data handling and the Proxy Server design pattern to ensure maintainable architecture.",
-      "Configured Gradle build automation with JaCoCo integration, achieving over 90% unit test coverage."
-    ],
-    "skills": [
-      "Java",
-      "Algorithm Design",
-      "JSON Data Handling",
-      "Proxy Design Pattern",
-      "Object-Oriented Programming (OOP)"
-    ],
-    "demo": "",
-    "source": "https://github.com/Sarthak-Kakkar-03/battleship-AI",
     "paper": ""
   }
 ]

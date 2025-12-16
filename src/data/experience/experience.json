@@ -1,176 +1,204 @@
 [
-    {
-        "id": "mnl_co-op-2025",
-        "companyName": "Movement Neuroscience Lab",
-        "companyWebsite": "https://www.researchgate.net/lab/Eugene-Tunik-Lab",
-        "position": "Embedded Systems Engineer Co-op",
-        "logoPath": "/assets/experience/mnl_logo.png",
-        "description": "Engineered a research-grade human experimentation system integrating electrical stimulation with real-time Bluetooth force feedback. Developed custom Python APIs, reverse-engineered BLE devices, and implemented microsecond-precise stimulator control. Contributed to a system that achieved IRB approval and was adopted across multiple projects.",
-        "duration": "January 2025 - June 2025",
-        "responsibilities": [
-            "Engineered a human research system combining electrical stimulation with real-time force data collection over Bluetooth.",
-            "Designed research workflows that prioritize participant comfort while ensuring rigorous data integrity for medical studies.",
-            "Translated medical concepts from interdisciplinary collaborators into technical system designs, creating a platform capable of delivering varied electrical stimulation configurations with real-time control and feedback.",
-            "Developed an automated post-processing pipeline that formatted raw data, produced clinician-ready visualizations, and sampled parameters from generated confidence intervals for the next phase of stimulation.",
-            "Collaborated with researchers to ensure the system complied with established safety protocols and research standards."
-        ],
-        "achievements": [
-            "Engineered core components of a stimulation and measurement system that was successfully approved by the Institutional Review Board (IRB), certifying its compliance for use in human experimentation.",
-            "The P24 stimulator’s vendor-provided Python API was fully synchronous, which prevented real-time modification of stimulation parameters. I forked and re-engineered the API into an alternate class structure that allowed asynchronous, real-time control. This redesigned API became the backbone for both our project and subsequent work by the team.",
-            "Proposed the use of a hand-held Bluetooth squeeze-strength tester for intuitive pain/discomfort data collection, a concept later adopted and scaled across additional projects.",
-            "Reverse-engineered an undocumented BLE squeeze device (Squegg) by identifying GATT UUIDs, parsing raw byte streams, and developing a Python API to stream squeeze strength, battery status, and real-time notifications.",
-            "Applied object-oriented design to build modular device APIs and handlers, enabling cross-device compatibility and reuse of the codebase in separate projects with different functionality.",
-            "Gained hands-on experience with NASDAQ hardware to generate TTL pulse triggers for the DS8R stimulator, enabling delivery of customizable current pulse configurations with temporal resolution in the microsecond range."
-        ], 
-        "technologies": [
-            "Python Development",
-            "Object-Oriented Design (OOD)",
-            "API Design",
-            "BLE (Bluetooth Low Energy)",
-            "GATT Protocols",
-            "UUID Mapping",
-            "Real-Time Systems",
-            "Async Programming",
-            "Protocol Reverse-Engineering",
-            "Data Parsing",
-            "Data Visualization",
-            "Device Integration",
-            "TTL Triggering",
-            "Microsecond Resolution",
-            "Medical Devices",
-            "Raspberry Pi",
-            "NI-DAQ / DAQ Systems"
-        ],
-        "recommendations": [
-            {
-                "name": "Dave Sherman",
-                "linkedIn": "https://www.linkedin.com/in/davidalexsherman/",
-                "content": "I had the privilege of mentoring Sarthak during his Northeastern Co-Op placement last spring, where he served as an embedded systems engineer on our team. His performance was nothing short of exceptional.\n\nSarthak successfully developed a sophisticated integrated research-grade system that combined neuromuscular electrical stimulators with both wired and wireless user input devices, plus Bluetooth-connected force gauges. This complex project required not only deep technical expertise but also the ability to navigate the unique challenges of working in a multidisciplinary environment.\n\nWhat truly set Sarthak apart was his remarkable ability to bridge technical and non-technical worlds. Working alongside medical professionals who didn't share his engineering background, he demonstrated exceptional communication skills, translating complex technical concepts into accessible language while maintaining the precision necessary for our research applications.\n\nThroughout the project, Sarthak consistently delivered timely updates, proactively identified potential issues, and engineered efficient solutions to problems as they arose. His adaptability shone when project scope evolved—he embraced changes seamlessly and actually took the work beyond what I had originally envisioned.\n\nSarthak combines strong technical fundamentals with excellent project management instincts and collaborative skills that make him invaluable on any engineering team. Any organization would be fortunate to have someone with his blend of technical expertise, communication abilities, and professional maturity.\n\nI recommend Sarthak without reservation and look forward to seeing the continued impact he'll make in his engineering career.",
-                "image": "/assets/experience/dave_sherman.jpeg", 
-                "relation": "Manager and mentor",
-                "position": "Assistant Professor at Northeastern University"
-            }
+  {
+    "id": "fresenius-co-op-2026",
+    "companyName": "Fresenius Medical Care (NxStage)",
+    "companyWebsite": "https://www.freseniusmedicalcare.com/",
+    "position": "Software Engineering / Computer Science Co-op (Incoming)",
+    "logoPath": "/assets/experience/fresenius_logo.png",
+    "description": "Accepted into a full-time, 6-month Software Engineering / Computer Science Co-op with Fresenius Medical Care’s NxStage organization, a global leader in renal-care technologies. The role focuses on contributing to the design, development, and testing of software systems and tools that support innovative, patient-centered medical devices within a regulated environment.",
+    "duration": "January 2026 - June 2026",
+    "responsibilities": [
+      "Participate in the analysis, design, development, and testing of NxStage software products and related engineering tools.",
+      "Add new functionality and reliability improvements, supported by clear documentation and unit tests.",
+      "Debug and troubleshoot issues in new and existing designs across embedded software and/or Windows/Linux tooling environments.",
+      "Ensure all work conforms to design controls, with proper documentation of analysis, design decisions, and verification/testing activities.",
+      "Collaborate within cross-functional teams using established software development methodologies, source control practices, and Azure-based engineering workflows."
+    ],
+    "achievements": ["Coming soon"],
+    "technologies": [
+      "Java",
+      "C/C++",
+      "JavaScript",
+      "Windows Development",
+      "Linux Tooling",
+      "Scripting",
+      "Unit Testing",
+      "Debugging & Root-Cause Analysis",
+      "Software Development Lifecycle (SDLC)",
+      "Source Control (Git)",
+      "Design Controls / Regulated Documentation",
+      "Azure (DevOps Tooling / CI-CD)"
+    ],
+    "recommendations": []
+  },
 
-        ]
-        
-    },
-    {
-        "id": "neu_ta_2024",
-        "companyName": "Northeastern University",
-        "position":"Teaching Assistant",
-        "companyWebsite": "https://www.khoury.northeastern.edu/",
-        "logoPath": "/assets/experience/nu_logo.png",
-        "description": "Served as Teaching Assistant for Northeastern’s Programming in C++ course, supporting 100+ students through rubric-based grading, office hour guidance, and technical troubleshooting on the Khoury server environment. Contributed to student success by reinforcing core C++ concepts, resolving development challenges, and maintaining consistent academic standards.",
-        "duration": "September 2024 - December 2024",
-        "responsibilities": [
-            "Evaluated weekly student assignments against detailed rubrics, assessing code quality, style, implementation accuracy, and overall technical proficiency.",
-            "Held weekly office hours providing one-on-one guidance on assignments, addressing conceptual doubts, and ensuring students gained a clear understanding of core topics.",
-            "Worked exclusively within the Khoury server environment for the duration of the course, leveraging it to grade assignments and guide students through setup, troubleshooting, and project development challenges."
-        ],
-        "achievements": [
-            "Ensured timely completion of grading assignments across multiple weeks and proactively supported fellow TAs in meeting their grading deadlines, improving overall team efficiency.",
-            "Invited by the professor to independently lead a class session on smart pointers, where I presented the lecture material, explained key concepts, and facilitated live coding exercises with students.",
-            "Escalated unresolved Khoury server issue for a student to the professor, advocated deadline flexibility, and explored alternative solutions to ensure fair grading."
-        ],
-        "technologies": [
-            "C++ Programming",
-            "Smart Pointers & Memory Management",
-            "Code Review & Quality Assurance",
-            "Debugging & Troubleshooting",
-            "Linux / Remote Servers (Khoury Server)",
-            "Git & Version Control",
-            "Shell / Command Line Tools"
-        ],
-        "recommendations": [
-            
-        ]
-    },
-    {
-        "id": "wissen_intern_2024",
-        "companyName": "Wissen Infotech",
-        "companyWebsite": "https://www.wissen.com/",
-        "position":"LLM Operations Intern",
-        "logoPath": "/assets/experience/wissen_logo.png",
-        "description": "Researched and developed LLM-driven code conversion systems, implementing prototypes for cross-language and cross-framework migration, a LangChain/LangGraph feedback loop inspired by supervisor architecture, and client-facing demos. Contributed to the company’s accelerator initiative by delivering scalable prototypes and presenting solutions to leadership and prospective clients.",
-        "duration": "June 2024 - August 2024",
-        "responsibilities": [
-            "Developed a configurable LLM-based system for cross-language and cross-framework code conversion (e.g., ABAP → JavaScript, Vue 2 → Vue 3), establishing a base platform for future use-case specialization while investigating limitations around file complexity.",
-            "Implemented a feedback loop using LangChain and LangGraph that executed converted code, analyzed console logs to pinpoint errors, regenerated specific files, and produced artifact error logs. Designed the loop to run for a user-defined number of attempts, with LLM-based early stopping upon successful execution.",
-            "Adapted the base LLM code-conversion system into functional prototypes for targeted scenarios and prepared technical presentations to communicate capabilities and business value to prospective clients.",
-            "Researched state-of-the-art large language models, producing a comprehensive report and presentation evaluating cost-effectiveness, performance benchmarks, accessibility, and practical strengths and limitations."
-        ],
-        "achievements": [
-            "Ideated, designed, and developed a prototype system within 2 months that was later scaled by the company into an accelerator, projected to significantly reduce code conversion time and manpower requirements.",
-            "Researched LangChain and LangGraph while learning their frameworks and designed a feedback loop inspired by the supervisor architecture, enabling LLMs to autonomously decide which file to regenerate after reading error logs or terminate the loop early upon success.",
-            "Developed and demoed tailored prototypes for four potential clients and presented the system to the President of the AI branch and one of the company’s founders, showcasing technical capabilities and business value."
-        ],
-        "technologies": [
-            "Large Language Models (LLMs)",
-            "LangChain",
-            "LangGraph",
-            "Supervisor Architecture",
-            "Code Conversion Systems",
-            "Cross-Language Framework Migration",
-            "Prototype Development",
-            "Feedback Loop Design",
-            "Error Log Analysis",
-            "Autonomous Code Regeneration",
-            "Python Development",
-            "Technical Presentations",
-            "Client Demos"
-        ],
-        "recommendations": [
-            {
-                "name": "Sandeep Thilakan",
-                "linkedIn": "https://www.linkedin.com/in/sandeep-thilakan-30b7a513b/",
-                "content": "I had the opportunity to mentor Sarthak during his internship at Wissen Infotech. Sarthak is very hands-on and was quick to learn AI tools and frameworks. He demonstrated good problem-solving abilities and, within 2 months, developed an accelerator solution that met our needs. He also communicated effectively during client presentations and showed initiative in mentoring team members. Sarthak's dedication and proactive approach make him a valuable team contributor.",
-                "image": "/assets/experience/sandeep_thilakan.jpeg",
-                "relation": "Mentor",
-                "position": "Vice President-AI"
-            },
-            {
-                "name": "John Loney",
-                "linkedIn": "https://www.linkedin.com/in/johnloney/",
-                "content": "I had the opportunity of working with Sarthak when he interned under me at Wissen AI. He did a wonderful job working on a solution using Python, AI & LLMs. He built an MVP in just 2 months. He showed initiative, ownership and excellent collaboration skills during that time. With his affable personality and hard working nature he would be an asset to any team he is part of. Would be a pleasure to work with him in the future. All the best Sarthak.",
-                "image": "/assets/experience/john_loney.jpeg",
-                "relation": "Manager",
-                "position": "Senior Leader - AI and Automation"
-            }
-            
-        ]
-    },
-    {
-        "id": "applify_intern_2023",
-        "companyName": "Applify",
-        "position":"Software Engineer Intern",
-        "companyWebsite": "https://www.applify.co/",
-        "logoPath": "/assets/experience/applify_logo.png",
-        "description": "Worked as a backend development intern at an app development company, contributing to a production application by assisting with RESTful API design, debugging, and unit testing with JaCoCo. Gained hands-on experience with PostgreSQL and JDBC for database access, wrote SQL queries within Java, and collaborated with senior developers using Git and JIRA in an agile team environment.",
-        "duration": "June 2023 - August 2023",
-        "responsibilities": [
-            "Contributed to backend development in Java by assisting with RESTful API design, implementation, and debugging as part of a team building a production mobile application.",
-            "Learned to interpret and write SQL queries in PostgreSQL and used JDBC to integrate database access within a Java backend application.",
-            "Assisted in debugging and writing unit tests with JaCoCo test reports, documented API endpoints and backend processes, and collaborated with senior developers during code reviews while following Git-based best practices."
-        ],
-        "achievements": [
-            "Gained practical experience collaborating in a professional team environment, learning agile workflows with JIRA and version control practices using Git.",
-            "Learned and wrote SQL queries within Java code and executed them through JDBC drivers to retrieve and manipulate data from a PostgreSQL database.",
-            "Developed professional communication skills by engaging with senior developers, asking technical questions, and incorporating feedback into deliverables."
-        ],
-        "technologies": ["Java Development",
-                        "PostgreSQL",
-                        "JDBC",
-                        "SQL Queries",
-                        "RESTful API Development",
-                        "JaCoCo Test Reports",
-                        "Unit Testing",
-                        "Git & Version Control",
-                        "JIRA",
-                        "Debugging & Troubleshooting",
-                        "Team Collaboration",
-                        "API Documentation"],
-        "recommendations": [
-            
-        ]
-    }
+  {
+    "id": "mnl_co-op-2025",
+    "companyName": "Movement Neuroscience Lab",
+    "companyWebsite": "https://www.researchgate.net/lab/Eugene-Tunik-Lab",
+    "position": "Embedded Systems Engineer Co-op",
+    "logoPath": "/assets/experience/mnl_logo.png",
+    "description": "Engineered a research-grade human experimentation system integrating electrical stimulation with real-time Bluetooth force feedback. Developed custom Python APIs, reverse-engineered BLE devices, and implemented microsecond-precise stimulator control. Contributed to a system that achieved IRB approval and was adopted across multiple projects.",
+    "duration": "January 2025 - June 2025",
+    "responsibilities": [
+      "Engineered a human research system combining electrical stimulation with real-time force data collection over Bluetooth.",
+      "Designed research workflows that prioritize participant comfort while ensuring rigorous data integrity for medical studies.",
+      "Translated medical concepts from interdisciplinary collaborators into technical system designs, creating a platform capable of delivering varied electrical stimulation configurations with real-time control and feedback.",
+      "Developed an automated post-processing pipeline that formatted raw data, produced clinician-ready visualizations, and sampled parameters from generated confidence intervals for the next phase of stimulation.",
+      "Collaborated with researchers to ensure the system complied with established safety protocols and research standards."
+    ],
+    "achievements": [
+      "Engineered core components of a stimulation and measurement system that was successfully approved by the Institutional Review Board (IRB), certifying its compliance for use in human experimentation.",
+      "The P24 stimulator’s vendor-provided Python API was fully synchronous, which prevented real-time modification of stimulation parameters. I forked and re-engineered the API into an alternate class structure that allowed asynchronous, real-time control. This redesigned API became the backbone for both our project and subsequent work by the team.",
+      "Proposed the use of a hand-held Bluetooth squeeze-strength tester for intuitive pain/discomfort data collection, a concept later adopted and scaled across additional projects.",
+      "Reverse-engineered an undocumented BLE squeeze device (Squegg) by identifying GATT UUIDs, parsing raw byte streams, and developing a Python API to stream squeeze strength, battery status, and real-time notifications.",
+      "Applied object-oriented design to build modular device APIs and handlers, enabling cross-device compatibility and reuse of the codebase in separate projects with different functionality.",
+      "Gained hands-on experience with NASDAQ hardware to generate TTL pulse triggers for the DS8R stimulator, enabling delivery of customizable current pulse configurations with temporal resolution in the microsecond range."
+    ],
+    "technologies": [
+      "Python Development",
+      "Object-Oriented Design (OOD)",
+      "API Design",
+      "BLE (Bluetooth Low Energy)",
+      "GATT Protocols",
+      "UUID Mapping",
+      "Real-Time Systems",
+      "Async Programming",
+      "Protocol Reverse-Engineering",
+      "Data Parsing",
+      "Data Visualization",
+      "Device Integration",
+      "TTL Triggering",
+      "Microsecond Resolution",
+      "Medical Devices",
+      "Raspberry Pi",
+      "NI-DAQ / DAQ Systems"
+    ],
+    "recommendations": [
+      {
+        "name": "Dave Sherman",
+        "linkedIn": "https://www.linkedin.com/in/davidalexsherman/",
+        "content": "I had the privilege of mentoring Sarthak during his Northeastern Co-Op placement last spring, where he served as an embedded systems engineer on our team. His performance was nothing short of exceptional.\n\nSarthak successfully developed a sophisticated integrated research-grade system that combined neuromuscular electrical stimulators with both wired and wireless user input devices, plus Bluetooth-connected force gauges. This complex project required not only deep technical expertise but also the ability to navigate the unique challenges of working in a multidisciplinary environment.\n\nWhat truly set Sarthak apart was his remarkable ability to bridge technical and non-technical worlds. Working alongside medical professionals who didn't share his engineering background, he demonstrated exceptional communication skills, translating complex technical concepts into accessible language while maintaining the precision necessary for our research applications.\n\nThroughout the project, Sarthak consistently delivered timely updates, proactively identified potential issues, and engineered efficient solutions to problems as they arose. His adaptability shone when project scope evolved—he embraced changes seamlessly and actually took the work beyond what I had originally envisioned.\n\nSarthak combines strong technical fundamentals with excellent project management instincts and collaborative skills that make him invaluable on any engineering team. Any organization would be fortunate to have someone with his blend of technical expertise, communication abilities, and professional maturity.\n\nI recommend Sarthak without reservation and look forward to seeing the continued impact he'll make in his engineering career.",
+        "image": "/assets/experience/dave_sherman.jpeg",
+        "relation": "Manager and mentor",
+        "position": "Assistant Professor at Northeastern University"
+      }
+    ]
+  },
+  {
+    "id": "neu_ta_2024",
+    "companyName": "Northeastern University",
+    "position": "Teaching Assistant",
+    "companyWebsite": "https://www.khoury.northeastern.edu/",
+    "logoPath": "/assets/experience/nu_logo.png",
+    "description": "Served as Teaching Assistant for Northeastern’s Programming in C++ course, supporting 100+ students through rubric-based grading, office hour guidance, and technical troubleshooting on the Khoury server environment. Contributed to student success by reinforcing core C++ concepts, resolving development challenges, and maintaining consistent academic standards.",
+    "duration": "September 2024 - December 2024",
+    "responsibilities": [
+      "Evaluated weekly student assignments against detailed rubrics, assessing code quality, style, implementation accuracy, and overall technical proficiency.",
+      "Held weekly office hours providing one-on-one guidance on assignments, addressing conceptual doubts, and ensuring students gained a clear understanding of core topics.",
+      "Worked exclusively within the Khoury server environment for the duration of the course, leveraging it to grade assignments and guide students through setup, troubleshooting, and project development challenges."
+    ],
+    "achievements": [
+      "Ensured timely completion of grading assignments across multiple weeks and proactively supported fellow TAs in meeting their grading deadlines, improving overall team efficiency.",
+      "Invited by the professor to independently lead a class session on smart pointers, where I presented the lecture material, explained key concepts, and facilitated live coding exercises with students.",
+      "Escalated unresolved Khoury server issue for a student to the professor, advocated deadline flexibility, and explored alternative solutions to ensure fair grading."
+    ],
+    "technologies": [
+      "C++ Programming",
+      "Smart Pointers & Memory Management",
+      "Code Review & Quality Assurance",
+      "Debugging & Troubleshooting",
+      "Linux / Remote Servers (Khoury Server)",
+      "Git & Version Control",
+      "Shell / Command Line Tools"
+    ],
+    "recommendations": []
+  },
+  {
+    "id": "wissen_intern_2024",
+    "companyName": "Wissen Infotech",
+    "companyWebsite": "https://www.wissen.com/",
+    "position": "LLM Operations Intern",
+    "logoPath": "/assets/experience/wissen_logo.png",
+    "description": "Researched and developed LLM-driven code conversion systems, implementing prototypes for cross-language and cross-framework migration, a LangChain/LangGraph feedback loop inspired by supervisor architecture, and client-facing demos. Contributed to the company’s accelerator initiative by delivering scalable prototypes and presenting solutions to leadership and prospective clients.",
+    "duration": "June 2024 - August 2024",
+    "responsibilities": [
+      "Developed a configurable LLM-based system for cross-language and cross-framework code conversion (e.g., ABAP → JavaScript, Vue 2 → Vue 3), establishing a base platform for future use-case specialization while investigating limitations around file complexity.",
+      "Implemented a feedback loop using LangChain and LangGraph that executed converted code, analyzed console logs to pinpoint errors, regenerated specific files, and produced artifact error logs. Designed the loop to run for a user-defined number of attempts, with LLM-based early stopping upon successful execution.",
+      "Adapted the base LLM code-conversion system into functional prototypes for targeted scenarios and prepared technical presentations to communicate capabilities and business value to prospective clients.",
+      "Researched state-of-the-art large language models, producing a comprehensive report and presentation evaluating cost-effectiveness, performance benchmarks, accessibility, and practical strengths and limitations."
+    ],
+    "achievements": [
+      "Ideated, designed, and developed a prototype system within 2 months that was later scaled by the company into an accelerator, projected to significantly reduce code conversion time and manpower requirements.",
+      "Researched LangChain and LangGraph while learning their frameworks and designed a feedback loop inspired by the supervisor architecture, enabling LLMs to autonomously decide which file to regenerate after reading error logs or terminate the loop early upon success.",
+      "Developed and demoed tailored prototypes for four potential clients and presented the system to the President of the AI branch and one of the company’s founders, showcasing technical capabilities and business value."
+    ],
+    "technologies": [
+      "Large Language Models (LLMs)",
+      "LangChain",
+      "LangGraph",
+      "Supervisor Architecture",
+      "Code Conversion Systems",
+      "Cross-Language Framework Migration",
+      "Prototype Development",
+      "Feedback Loop Design",
+      "Error Log Analysis",
+      "Autonomous Code Regeneration",
+      "Python Development",
+      "Technical Presentations",
+      "Client Demos"
+    ],
+    "recommendations": [
+      {
+        "name": "Sandeep Thilakan",
+        "linkedIn": "https://www.linkedin.com/in/sandeep-thilakan-30b7a513b/",
+        "content": "I had the opportunity to mentor Sarthak during his internship at Wissen Infotech. Sarthak is very hands-on and was quick to learn AI tools and frameworks. He demonstrated good problem-solving abilities and, within 2 months, developed an accelerator solution that met our needs. He also communicated effectively during client presentations and showed initiative in mentoring team members. Sarthak's dedication and proactive approach make him a valuable team contributor.",
+        "image": "/assets/experience/sandeep_thilakan.jpeg",
+        "relation": "Mentor",
+        "position": "Vice President-AI"
+      },
+      {
+        "name": "John Loney",
+        "linkedIn": "https://www.linkedin.com/in/johnloney/",
+        "content": "I had the opportunity of working with Sarthak when he interned under me at Wissen AI. He did a wonderful job working on a solution using Python, AI & LLMs. He built an MVP in just 2 months. He showed initiative, ownership and excellent collaboration skills during that time. With his affable personality and hard working nature he would be an asset to any team he is part of. Would be a pleasure to work with him in the future. All the best Sarthak.",
+        "image": "/assets/experience/john_loney.jpeg",
+        "relation": "Manager",
+        "position": "Senior Leader - AI and Automation"
+      }
+    ]
+  },
+  {
+    "id": "applify_intern_2023",
+    "companyName": "Applify",
+    "position": "Software Engineer Intern",
+    "companyWebsite": "https://www.applify.co/",
+    "logoPath": "/assets/experience/applify_logo.png",
+    "description": "Worked as a backend development intern at an app development company, contributing to a production application by assisting with RESTful API design, debugging, and unit testing with JaCoCo. Gained hands-on experience with PostgreSQL and JDBC for database access, wrote SQL queries within Java, and collaborated with senior developers using Git and JIRA in an agile team environment.",
+    "duration": "June 2023 - August 2023",
+    "responsibilities": [
+      "Contributed to backend development in Java by assisting with RESTful API design, implementation, and debugging as part of a team building a production mobile application.",
+      "Learned to interpret and write SQL queries in PostgreSQL and used JDBC to integrate database access within a Java backend application.",
+      "Assisted in debugging and writing unit tests with JaCoCo test reports, documented API endpoints and backend processes, and collaborated with senior developers during code reviews while following Git-based best practices."
+    ],
+    "achievements": [
+      "Gained practical experience collaborating in a professional team environment, learning agile workflows with JIRA and version control practices using Git.",
+      "Learned and wrote SQL queries within Java code and executed them through JDBC drivers to retrieve and manipulate data from a PostgreSQL database.",
+      "Developed professional communication skills by engaging with senior developers, asking technical questions, and incorporating feedback into deliverables."
+    ],
+    "technologies": [
+      "Java Development",
+      "PostgreSQL",
+      "JDBC",
+      "SQL Queries",
+      "RESTful API Development",
+      "JaCoCo Test Reports",
+      "Unit Testing",
+      "Git & Version Control",
+      "JIRA",
+      "Debugging & Troubleshooting",
+      "Team Collaboration",
+      "API Documentation"
+    ],
+    "recommendations": []
+  }
 ]
