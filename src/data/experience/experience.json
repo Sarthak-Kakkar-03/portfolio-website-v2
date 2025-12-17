@@ -35,7 +35,7 @@
   {
     "id": "mnl_co-op-2025",
     "companyName": "Movement Neuroscience Lab",
-    "companyWebsite": "https://www.researchgate.net/lab/Eugene-Tunik-Lab",
+    "companyWebsite": "https://movementneurosciencelab.sites.northeastern.edu/",
     "position": "Embedded Systems Engineer Co-op",
     "logoPath": "/assets/experience/mnl_logo.png",
     "description": "Engineered a research-grade human experimentation system integrating electrical stimulation with real-time Bluetooth force feedback. Developed custom Python APIs, reverse-engineered BLE devices, and implemented microsecond-precise stimulator control. Contributed to a system that achieved IRB approval and was adopted across multiple projects.",
