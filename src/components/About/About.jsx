@@ -62,7 +62,7 @@ const About = () => {
         >
           <div className="max-w-48 h-48 w-full lg:max-w-72 lg:h-72 overflow-hidden rounded-full lg:rounded-xl mx-auto transition lg:hover:translate-y-1 lg:hover:scale-[1.02]">
             <img
-              src="/assets/about_img1.png"
+              src="/assets/about_img.png"
               alt="Me"
               className="w-full h-full object-cover"
             />

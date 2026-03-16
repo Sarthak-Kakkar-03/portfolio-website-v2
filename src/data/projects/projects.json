@@ -27,6 +27,37 @@
     "paper": ""
   },
   {
+    "title": "Retrieval-as-a-Service (RaaS)",
+    "imageSrc": "/assets/projects/raas_page.png",
+    "details": [
+      "Built a self-hosted retrieval platform designed as a cloneable personal service that anyone can run, customize, and use as the foundation for their own RAG workflow.",
+      "Created a clean full-stack experience with a Next.js frontend, FastAPI backend, and Chroma vector database for fast document retrieval.",
+      "Designed a simple project-based workflow so users can create projects, upload files, run ingestion, and query results from both the UI and API.",
+      "Added secure admin controls and per-project API keys so teams can safely manage projects and connect the service to their own applications.",
+      "Packaged the system for local development and cloud deployment, making it a practical personal retrieval service for internal search, document Q&A, and custom RAG pipelines."
+    ],
+    "skills": [
+      "Next.js",
+      "FastAPI",
+      "Chroma",
+      "Docker",
+      "Fly.io",
+      "Retrieval-Augmented Generation (RAG)",
+      "Vector Search",
+      "Document Ingestion",
+      "REST API Design",
+      "API Authentication",
+      "Session Authentication",
+      "TypeScript",
+      "Python",
+      "Full-Stack Development",
+      "Self-Hosted Systems"
+    ],
+    "demo": "https://raas-sk.fly.dev/",
+    "source": "https://github.com/Sarthak-Kakkar-03/RAAS",
+    "paper": ""
+  },
+  {
     "title": "AI Powered Communication Assistant",
     "imageSrc": "/assets/projects/ai_com.jpg",
     "details": [
@@ -55,33 +86,6 @@
     ],
     "demo": "https://communication-assistant.netlify.app",
     "source": "https://github.com/Sarthak-Kakkar-03/com_agent",
-    "paper": ""
-  },
-
-  {
-    "title": "Portfolio Website",
-    "imageSrc": "/assets/projects/project.png",
-    "details": [
-      "Built with React, React Router DOM, and Tailwind CSS, featuring smooth animations and transitions.",
-      "Implemented dark and light mode toggle with default theme settings.",
-      "Designed a mobile-first, responsive UI with a clean and modern layout.",
-      "Structured content via easily editable JSON configuration files for scalability and flexibility.",
-      "Hosted the website on Netlify, allowing for continuous builds and update pipeline."
-    ],
-    "skills": [
-      "React",
-      "React Router DOM",
-      "Tailwind CSS",
-      "Responsive Design",
-      "Mobile-First Development",
-      "Dark/Light Mode",
-      "Animations & Transitions",
-      "JSON Configuration",
-      "UI/UX Design",
-      "Netlify"
-    ],
-    "demo": "https://skakkar.netlify.app/",
-    "source": "https://github.com/Sarthak-Kakkar-03/portfolio-website-v2",
     "paper": ""
   },
 
@@ -151,6 +155,33 @@
     ],
     "demo": "",
     "source": "https://github.com/Sarthak-Kakkar-03/Mixed-Typed-Language-Design",
+    "paper": ""
+  },
+
+  {
+    "title": "Portfolio Website",
+    "imageSrc": "/assets/projects/project.png",
+    "details": [
+      "Built with React, React Router DOM, and Tailwind CSS, featuring smooth animations and transitions.",
+      "Implemented dark and light mode toggle with default theme settings.",
+      "Designed a mobile-first, responsive UI with a clean and modern layout.",
+      "Structured content via easily editable JSON configuration files for scalability and flexibility.",
+      "Hosted the website on Netlify, allowing for continuous builds and update pipeline."
+    ],
+    "skills": [
+      "React",
+      "React Router DOM",
+      "Tailwind CSS",
+      "Responsive Design",
+      "Mobile-First Development",
+      "Dark/Light Mode",
+      "Animations & Transitions",
+      "JSON Configuration",
+      "UI/UX Design",
+      "Netlify"
+    ],
+    "demo": "https://skakkar.netlify.app/",
+    "source": "https://github.com/Sarthak-Kakkar-03/portfolio-website-v2",
     "paper": ""
   },
 
