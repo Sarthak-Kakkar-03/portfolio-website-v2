@@ -33,22 +33,38 @@ const Contact = () => {
         setStatus({ ok: true, msg: "Message sent!", loading: false });
         form.reset();
       } else {
-        setStatus({ ok: false, msg: json.message || "Failed to send.", loading: false });
+        setStatus({
+          ok: false,
+          msg: json.message || "Failed to send.",
+          loading: false,
+        });
       }
     } catch {
-      setStatus({ ok: false, msg: "Network error. Please try again.", loading: false });
+      setStatus({
+        ok: false,
+        msg: "Network error. Please try again.",
+        loading: false,
+      });
     }
   };
 
   return (
     <div className="text-matte flex flex-1 justify-center items-center">
-      <form onSubmit={onSubmit} className="bg-card rounded-xl p-3 lg:p-5 flex flex-col gap-5 lg:min-w-[50vw]">
+      <form
+        onSubmit={onSubmit}
+        className="bg-card rounded-xl p-3 lg:p-5 flex flex-col gap-5 lg:min-w-[50vw]"
+      >
         <div className="flex flex-1 justify-center">
           <h1 className="text-4xl font-bold">Send me a message</h1>
         </div>
 
         <div className="flex flex-col gap-2">
-          <label htmlFor="name" className="hover:text-highlight hover:cursor-pointer">Full Name</label>
+          <label
+            htmlFor="name"
+            className="hover:text-highlight hover:cursor-pointer"
+          >
+            Full Name
+          </label>
           <input
             id="name"
             name="name"
@@ -60,7 +76,12 @@ const Contact = () => {
         </div>
 
         <div className="flex flex-col gap-2">
-          <label htmlFor="email" className="hover:text-highlight hover:cursor-pointer">Email Address</label>
+          <label
+            htmlFor="email"
+            className="hover:text-highlight hover:cursor-pointer"
+          >
+            Email Address
+          </label>
           <input
             id="email"
             name="email"
@@ -72,7 +93,12 @@ const Contact = () => {
         </div>
 
         <div className="flex flex-col gap-2">
-          <label htmlFor="message" className="hover:text-highlight hover:cursor-pointer">Message</label>
+          <label
+            htmlFor="message"
+            className="hover:text-highlight hover:cursor-pointer"
+          >
+            Message
+          </label>
           <textarea
             id="message"
             name="message"
@@ -82,7 +108,13 @@ const Contact = () => {
           />
         </div>
 
-        <input type="checkbox" name="botcheck" className="hidden" tabIndex={-1} autoComplete="off" />
+        <input
+          type="checkbox"
+          name="botcheck"
+          className="hidden"
+          tabIndex={-1}
+          autoComplete="off"
+        />
 
         <div className="flex justify-center items-center">
           <button
@@ -94,7 +126,13 @@ const Contact = () => {
           </button>
         </div>
 
-        {status.msg && <p className={`text-center text-sm ${status.ok ? "text-green-600" : "text-red-600"}`}>{status.msg}</p>}
+        {status.msg && (
+          <p
+            className={`text-center text-sm ${status.ok ? "text-green-600" : "text-red-600"}`}
+          >
+            {status.msg}
+          </p>
+        )}
       </form>
     </div>
   );

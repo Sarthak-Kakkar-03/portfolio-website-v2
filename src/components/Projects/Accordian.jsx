@@ -40,13 +40,19 @@ const Accordion = ({ data }) => {
         <div className="p-2 lg:p-5 grid grid-cols-1 lg:grid-cols-2 gap-8">
           <ul className="flex flex-col gap-2 list-disc list-outside pl-6 order-3 lg:order-1">
             {data.details.map((detail, idx) => {
-              return (<li key={`detail_${idx}`} className="">
-                {detail}
-              </li>)
+              return (
+                <li key={`detail_${idx}`} className="">
+                  {detail}
+                </li>
+              );
             })}
           </ul>
           <div className="flex justify-center items-center order-1 lg:order-2">
-            <img src={data.imageSrc} alt="" className="max-h-[150px] lg:max-h-[300px]" />
+            <img
+              src={data.imageSrc}
+              alt=""
+              className="max-h-[150px] lg:max-h-[300px]"
+            />
           </div>
           <div className="lg:flex hidden flex-wrap gap-2 order-4 lg:order-3">
             {data.skills.map((skill, idx) => {
@@ -58,14 +64,28 @@ const Accordion = ({ data }) => {
             })}
           </div>
           <div className="flex justify-around items-center order-2 lg:order-4">
-            <a className={`border-matte transitional-all border hover:border-highlight hover:-translate-y-1 bg-surface rounded-xl p-2 hover:text-highlight hover:shadow-xl shadow hover:shadow-highlight ${data.source === "" ? "hidden" : "block"}`}
-            href={data.source} target="blank">Source</a>
-            <a className={`border-matte transitional-all border hover:border-highlight hover:-translate-y-1 bg-surface rounded-xl p-2 hover:text-highlight hover:shadow-xl shadow hover:shadow-highlight ${data.demo === "" ? "hidden" : "block"}`}
-            href={data.demo} target="blank">Demo</a>
-            <a className={`border-matte transitional-all border hover:border-highlight hover:-translate-y-1 bg-surface rounded-xl p-2 hover:text-highlight hover:shadow-xl shadow hover:shadow-highlight ${data.paper === "" ? "hidden" : "block"}`}
-            href={data.paper} target="blank">Paper</a>
+            <a
+              className={`border-matte transitional-all border hover:border-highlight hover:-translate-y-1 bg-surface rounded-xl p-2 hover:text-highlight hover:shadow-xl shadow hover:shadow-highlight ${data.source === "" ? "hidden" : "block"}`}
+              href={data.source}
+              target="blank"
+            >
+              Source
+            </a>
+            <a
+              className={`border-matte transitional-all border hover:border-highlight hover:-translate-y-1 bg-surface rounded-xl p-2 hover:text-highlight hover:shadow-xl shadow hover:shadow-highlight ${data.demo === "" ? "hidden" : "block"}`}
+              href={data.demo}
+              target="blank"
+            >
+              Demo
+            </a>
+            <a
+              className={`border-matte transitional-all border hover:border-highlight hover:-translate-y-1 bg-surface rounded-xl p-2 hover:text-highlight hover:shadow-xl shadow hover:shadow-highlight ${data.paper === "" ? "hidden" : "block"}`}
+              href={data.paper}
+              target="blank"
+            >
+              Paper
+            </a>
           </div>
-          
         </div>
       </div>
     </div>

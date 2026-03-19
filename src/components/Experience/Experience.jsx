@@ -37,29 +37,36 @@ const Experience = () => {
                   />
                 </svg>
               </div>
-              <Link to={`/experience/${exp.id}`}
+              <Link
+                to={`/experience/${exp.id}`}
                 className="flex flex-1 bg-card rounded-xl group-hover:cursor-pointer 
               transition-all shadow group-hover:shadow-xl group-hover:-translate-y-2 group-hover:scale-[1.02]
               group-hover:border border-highlight p-2 duration-300 overflow-hidden"
               >
-                    <div className="flex justify-center items-center aspect-square p-2 lg:p-5">
-                    <div className="rounded-xl aspect-square flex justify-center items-center bg-surface p-1.5 max-h-[75px] lg:max-h-[150px]">
-                        <img src={exp.logoPath} alt="${}" />
+                <div className="flex justify-center items-center aspect-square p-2 lg:p-5">
+                  <div className="rounded-xl aspect-square flex justify-center items-center bg-surface p-1.5 max-h-[75px] lg:max-h-[150px]">
+                    <img src={exp.logoPath} alt="${}" />
+                  </div>
+                </div>
+                <div className="flex flex-col w-full p-2 lg:p-5 justify-around">
+                  <div className="flex text-lg lg:text-xl flex-wrap text-center lg:text-left break-words lg:justify-between">
+                    <div className="font-bold">{`${exp.companyName} @ ${exp.position}`}</div>
+                    <div className="hidden lg:block font-thin text-highlight text-base">
+                      {exp.duration}
                     </div>
+                  </div>
+                  <div className="hidden lg:flex text-matte group-hover:text-highlight text-left">
+                    {exp.description}
+                  </div>
+                  <div className="flex w-full justify-end">
+                    <div className="hidden text-highlight transition lg:block text-sm font-bold hover:scale-[1.05]">
+                      Learn More
                     </div>
-                    <div className="flex flex-col w-full p-2 lg:p-5 justify-around">
-                        <div className="flex text-lg lg:text-xl flex-wrap text-center lg:text-left break-words lg:justify-between">
-                            <div className="font-bold">{`${exp.companyName} @ ${exp.position}`}</div>
-                            <div className="hidden lg:block font-thin text-highlight text-base">{exp.duration}</div>
-                        </div>
-                        <div className="hidden lg:flex text-matte group-hover:text-highlight text-left">
-                            {exp.description}
-                        </div>
-                        <div className="flex w-full justify-end">
-                          <div className="hidden text-highlight transition lg:block text-sm font-bold hover:scale-[1.05]">Learn More</div>
-                          <div className="text-highlight text-sm block lg:hidden">Learn More</div>
-                        </div>
+                    <div className="text-highlight text-sm block lg:hidden">
+                      Learn More
                     </div>
+                  </div>
+                </div>
               </Link>
             </div>
           );

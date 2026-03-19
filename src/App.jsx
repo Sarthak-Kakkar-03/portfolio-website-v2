@@ -39,20 +39,27 @@ function HomePage() {
       <Section id="experience">
         <Experience />
       </Section>
-      <Section id="projects" >
-        <Projects/>
+      <Section id="projects">
+        <Projects />
       </Section>
       <Section id="contact">
-        <Contact/>
+        <Contact />
       </Section>
-      <Footer/>
+      <Footer />
     </>
   );
 }
 
 const router = createBrowserRouter([
   { path: "/", element: <HomePage /> },
-  { path: "/experience/:id", element: <><ExperiencePage /></> },
+  {
+    path: "/experience/:id",
+    element: (
+      <>
+        <ExperiencePage />
+      </>
+    ),
+  },
 ]);
 
 export default function App() {

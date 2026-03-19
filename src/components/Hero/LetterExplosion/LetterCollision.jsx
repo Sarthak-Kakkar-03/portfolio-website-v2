@@ -59,7 +59,7 @@ export default function LetterCollision() {
               scrub: true, // smooth follow
               invalidateOnRefresh: false, // keep cached randomness
             },
-          }
+          },
         );
       });
     }, container);
@@ -86,27 +86,29 @@ export default function LetterCollision() {
       >
         <div className="mb-8">
           <div className="space-y-2">
-          {/* line 1 */}
-          <div className="flex flex-wrap gap-x-4 sm:gap-x-10">
-            <LetterDisplay word={lines[0]} />
-            <LetterDisplay word={lines[1]} />
-          </div>
+            {/* line 1 */}
+            <div className="flex flex-wrap gap-x-4 sm:gap-x-10">
+              <LetterDisplay word={lines[0]} />
+              <LetterDisplay word={lines[1]} />
+            </div>
 
-          {/* line 2 */}
-          <div className="flex flex-wrap gap-x-4 sm:gap-x-10">
-            <LetterDisplay word={lines[2]} />
-            <LetterDisplay word={lines[3]} />
-          </div>
+            {/* line 2 */}
+            <div className="flex flex-wrap gap-x-4 sm:gap-x-10">
+              <LetterDisplay word={lines[2]} />
+              <LetterDisplay word={lines[3]} />
+            </div>
 
-          {/* line 3 */}
-          <div className="flex flex-wrap gap-x-4 sm:gap-x-10">
-            <LetterDisplay word={lines[4]} />
+            {/* line 3 */}
+            <div className="flex flex-wrap gap-x-4 sm:gap-x-10">
+              <LetterDisplay word={lines[4]} />
+            </div>
           </div>
         </div>
-        </div>
-        <div className="hidden lg:flex flex-col items-end w-full justify-end
+        <div
+          className="hidden lg:flex flex-col items-end w-full justify-end
         animate-bounce
-        ">
+        "
+        >
           <div className="flex flex-col items-center text-center p-1">
             <p>Scroll Down</p>
             <svg

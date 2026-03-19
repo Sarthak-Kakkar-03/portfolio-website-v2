@@ -2,33 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 /* LIGHT values you gave */
 :root {
-  --highlight: #1C39BB;   /* brand blue */
-  --matte:   #191f22;   /* near-black */
-  --surface:#f4f4f6;  /* subtle gray */
+  --highlight: #1c39bb; /* brand blue */
+  --matte: #191f22; /* near-black */
+  --surface: #f4f4f6; /* subtle gray */
   --card: #e6e6e9ef;
-
 }
 
 :root.dark,
 [data-theme="dark"] {
-  --highlight: #FF8000;
-  --matte: #e6e6e6;    
-  --surface: #212122;   
-  --card: #020403;      
+  --highlight: #ff8000;
+  --matte: #e6e6e6;
+  --surface: #212122;
+  --card: #020403;
 }
-
-
 
 section[data-fullpage] {
   scroll-snap-align: start;
 }
 
 @media (min-width: 768px) {
-  html, body { scroll-padding-top: 4rem; }
+  html,
+  body {
+    scroll-padding-top: 4rem;
+  }
 }
 * {
   font-family: "Outfit", Arial, Helvetica, sans-serif;

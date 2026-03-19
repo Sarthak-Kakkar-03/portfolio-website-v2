@@ -1,4 +1,3 @@
-
 function getRandomSpeed() {
   return 0.8 + Math.random() * 0.7;
 }
@@ -17,6 +16,5 @@ function LetterDisplay({ word }) {
     </span>
   );
 }
-
 
 export default LetterDisplay;

@@ -266,7 +266,9 @@ const About = () => {
               <path d="M0 6H3V8H0V6Z" />
             </svg>
           </div>
-          <h2 className="font-bold text-xl text-center">Frontend Development</h2>
+          <h2 className="font-bold text-xl text-center">
+            Frontend Development
+          </h2>
           <p className="text-center">
             Skilled in creating responsive, accessible, and visually engaging
             user interfaces with{" "}
