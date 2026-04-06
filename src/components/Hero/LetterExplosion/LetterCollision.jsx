@@ -10,7 +10,7 @@ gsap.registerPlugin(ScrollTrigger);
 // If your header is exactly 60px tall:
 const HEADER_H = 64;
 
-const lines = ["Shaping", "vision", "into", "lasting", "solutions"];
+const lines = ["Create,", "Learn,", "Iterate,", "Improve,", "Repeat."];
 
 export default function LetterCollision() {
   const ref = useRef(null);
