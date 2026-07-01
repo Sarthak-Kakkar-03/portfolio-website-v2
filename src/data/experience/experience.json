@@ -56,7 +56,16 @@
       "Debugging",
       "Testing"
     ],
-    "recommendations": []
+    "recommendations": [
+      {
+        "name": "Radomir Popovic",
+        "linkedIn": "https://www.linkedin.com/in/radomir-popovic/",
+        "content": "I had the pleasure of working with Sarthak during his data science internship, and he made a strong impression through both the quality of his work and the way he approached challenges. Sarthak contributed meaningfully to our RAG-based LLM systems and made numerous improvements across our data and pipeline workflows. He consistently showed initiative, autonomy, and curiosity in his research activities, while also demonstrating a high level of professionalism and maturity. Beyond his technical contributions, Sarthak was an excellent communicator. He delivered clear presentations, shared his work effectively, and collaborated with the team with confidence and thoughtfulness. I would be happy to work with Sarthak again and strongly recommend him for future data science, machine learning, research-oriented, or software engineering roles.",
+        "image": "/assets/experience/radomir.png",
+        "relation": "Manager and mentor",
+        "position": "Tech Lead at Fresenius"
+      }
+    ]
   },
 
   {
