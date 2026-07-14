@@ -64,6 +64,14 @@
         "image": "/assets/experience/radomir.png",
         "relation": "Manager and mentor",
         "position": "Tech Lead at Fresenius"
+      },
+      {
+        "name": "Jamie Janvrin",
+        "linkedIn": "https://www.linkedin.com/in/jamie-janvrin-79118546/",
+        "content": "Sarthak was an outstanding co-op who consistently impressed me with his technical depth, problem-solving ability, and ownership. He made significant contributions to our AI initiatives, and was highly effective at navigating complex, open-ended challenges independently. Beyond his technical capabilities, he is a strong collaborator, an excellent presenter, and a clear communicator who regularly brought thoughtful ideas and perspectives to the team. Sarthak combines technical excellence with professionalism, curiosity, and a continuous learning mindset. I would gladly work with him again and highly recommend him for future opportunities in AI and data science.",
+        "image": "/assets/experience/jamie.jpeg",
+        "relation": "Mentor",
+        "position": "Data Scientist/Co-op Manager at Fresenius"
       }
     ]
   },
